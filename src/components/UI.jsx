@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef } from "react";
+import { Link } from "react-router-dom";
 import { C } from "../theme";
 
 export function Badge({ children }) {
@@ -52,6 +53,7 @@ export function Counter({ end, suffix = "", duration = 2000 }) {
 
 export function ServiceCard({ tier, title, description, features, isHighlight }) {
   const [h, setH] = useState(false);
+  const [bh, setBh] = useState(false);
   return (
     <div
       onMouseEnter={() => setH(true)}
@@ -76,9 +78,9 @@ export function ServiceCard({ tier, title, description, features, isHighlight })
       }}>{title}</h3>
       <p style={{
         fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.gray,
-        lineHeight: 1.7, margin: "0 0 28px 0", flex: 1,
+        lineHeight: 1.7, margin: "0 0 28px 0",
       }}>{description}</p>
-      <div style={{ display: "flex", flexDirection: "column", gap: 10 }}>
+      <div style={{ display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
         {features.map((f, i) => (
           <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
             <span style={{ color: C.accent, fontSize: 14, marginTop: 2, flexShrink: 0 }}>→</span>
@@ -86,6 +88,23 @@ export function ServiceCard({ tier, title, description, features, isHighlight })
           </div>
         ))}
       </div>
+      <Link
+        to="/contact"
+        onMouseEnter={() => setBh(true)}
+        onMouseLeave={() => setBh(false)}
+        style={{
+          marginTop: 28,
+          padding: "12px 24px",
+          background: bh ? C.accent : "transparent",
+          color: bh ? "#fff" : C.accent,
+          border: `1px solid ${C.accent}`,
+          fontFamily: "'Space Mono', monospace",
+          fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
+          textTransform: "uppercase", textDecoration: "none",
+          textAlign: "center", borderRadius: 2,
+          transition: "all 0.25s ease",
+        }}
+      >Learn More →</Link>
     </div>
   );
 }
