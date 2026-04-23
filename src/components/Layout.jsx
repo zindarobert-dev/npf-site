@@ -50,7 +50,11 @@ export default function Layout({ children }) {
             }} />
             <span style={{
               fontFamily: "'Space Mono', monospace", fontSize: 14, color: C.dark, letterSpacing: "0.05em",
-            }}>NET POSITIVE</span>
+              display: "flex", flexDirection: "column", lineHeight: 1.1,
+            }}>
+              <span>NET POSITIVE</span>
+              <span>FINANCIALS</span>
+            </span>
           </Link>
 
           {/* Desktop links */}
