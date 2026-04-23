@@ -102,7 +102,7 @@ export default function Contact() {
                   { key: "name", label: "Name", type: "text", placeholder: "Your name" },
                   { key: "email", label: "Email", type: "email", placeholder: "you@company.com" },
                   { key: "company", label: "Company", type: "text", placeholder: "Company name" },
-                  { key: "revenue", label: "Annual Revenue Range", type: "text", placeholder: "e.g. $3M–$10M" },
+                  { key: "revenue", label: "Annual Revenue Range", type: "text", placeholder: "e.g. $5M–$10M" },
                 ].map(({ key, label, type, placeholder }) => (
                   <div key={key}>
                     <label style={{
