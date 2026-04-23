@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { C } from "../theme";
-import { Badge, Counter, PainCard, PageWrapper, Section, SectionLabel } from "../components/UI";
+import { Badge, PainCard, PageWrapper, Section, SectionLabel } from "../components/UI";
 
 export default function Home() {
   return (
@@ -57,29 +57,6 @@ export default function Home() {
             }}>See Services</Link>
           </div>
 
-          {/* Stats */}
-          <div className="fade-up-d4" style={{
-            display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(160px, 1fr))",
-            gap: 1, background: C.border, border: `1px solid ${C.border}`,
-            borderRadius: 3, overflow: "hidden", maxWidth: 700,
-          }}>
-            {[
-              { value: <Counter end={15} suffix="+" />, label: "Years Experience" },
-              { value: "$100M+", label: "Capital Managed" },
-              { value: "24/7", label: "Cash Flow Visibility" },
-            ].map(({ value, label }, i) => (
-              <div key={i} style={{ background: C.bgCard, padding: "24px 28px", textAlign: "center" }}>
-                <div style={{
-                  fontFamily: "'Space Mono', monospace", fontSize: 28, fontWeight: 700,
-                  color: C.accent, marginBottom: 6,
-                }}>{value}</div>
-                <div style={{
-                  fontFamily: "'Outfit', sans-serif", fontSize: 12, color: C.gray,
-                  textTransform: "uppercase", letterSpacing: "0.1em",
-                }}>{label}</div>
-              </div>
-            ))}
-          </div>
         </div>
       </section>
 
