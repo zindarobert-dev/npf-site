@@ -38,8 +38,7 @@ export default function Home() {
             maxWidth: 580, margin: "0 0 44px 0", fontWeight: 300,
           }}>
             CFO-level financial infrastructure for capital-intensive businesses
-            doing $3M–$25M in revenue. Strategic judgment, not just bookkeeping —
-            at a cost that makes sense.
+            doing $1M–$20M in revenue.
           </p>
           <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 80 }}>
             <Link to="/contact" style={{
