@@ -2,13 +2,35 @@ import { useState } from "react";
 import { C } from "../theme";
 import { SectionLabel, PageWrapper, Section } from "../components/UI";
 
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xdayprro";
+
 export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", company: "", revenue: "", message: "" });
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState(null);
 
-  const handleSubmit = () => {
-    // Wire to Formspree, Netlify Forms, or your backend
-    setSubmitted(true);
+  const handleSubmit = async () => {
+    if (submitting) return;
+    if (!formData.name.trim() || !formData.email.trim()) {
+      setError("Please fill in your name and email.");
+      return;
+    }
+    setSubmitting(true);
+    setError(null);
+    try {
+      const res = await fetch(FORMSPREE_ENDPOINT, {
+        method: "POST",
+        headers: { "Content-Type": "application/json", Accept: "application/json" },
+        body: JSON.stringify(formData),
+      });
+      if (!res.ok) throw new Error("Submission failed");
+      setSubmitted(true);
+    } catch {
+      setError("Something went wrong. Please email bobby directly or try again.");
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -134,12 +156,21 @@ export default function Contact() {
                       borderRadius: 3, transition: "border-color 0.2s",
                     }} />
                 </div>
-                <button onClick={handleSubmit} style={{
-                  width: "100%", padding: "16px", background: C.accent, color: "#fff",
+                {error && (
+                  <div style={{
+                    padding: "12px 14px", background: "#FCEBEA", border: "1px solid #E5B4B0",
+                    color: "#8B2A22", fontSize: 13, borderRadius: 3,
+                    fontFamily: "'Outfit', sans-serif", lineHeight: 1.5,
+                  }}>{error}</div>
+                )}
+                <button onClick={handleSubmit} disabled={submitting} style={{
+                  width: "100%", padding: "16px",
+                  background: submitting ? C.gray : C.accent, color: "#fff",
                   border: "none", fontFamily: "'Space Mono', monospace", fontSize: 13,
-                  fontWeight: 700, cursor: "pointer", letterSpacing: "0.1em",
-                  textTransform: "uppercase", borderRadius: 3, marginTop: 4, transition: "all 0.3s",
-                }}>Send It →</button>
+                  fontWeight: 700, cursor: submitting ? "not-allowed" : "pointer",
+                  letterSpacing: "0.1em", textTransform: "uppercase", borderRadius: 3,
+                  marginTop: 4, transition: "all 0.3s",
+                }}>{submitting ? "Sending..." : "Send It →"}</button>
               </div>
             )}
           </div>
