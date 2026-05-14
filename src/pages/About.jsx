@@ -12,12 +12,10 @@ export default function About() {
           fontFamily: "'Outfit', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
           fontWeight: 900, lineHeight: 1.08, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.03em",
         }}>
-          Veteran-owned.<br /><span style={{ color: C.accent }}>Operator-built.</span>
+          About <span style={{ color: C.accent }}>Three Seeds.</span>
         </h1>
         <p style={{ fontSize: 18, color: C.gray, lineHeight: 1.7, maxWidth: 580, marginBottom: 0, fontWeight: 300 }}>
-          Net Positive Financials was built by someone who understands
-          what it means to operate under pressure, with limited resources,
-          in high-stakes environments — and deliver anyway.
+          Why we're named what we are.
         </p>
       </Section>
 
@@ -32,22 +30,29 @@ export default function About() {
               fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
               fontWeight: 800, lineHeight: 1.15, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
-              The operator's CFO
+              Slow growth. Constant attention.
             </h2>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              Most fractional CFOs come from finance backgrounds and learn your industry on the job.
-              Bobby built NPF from the operator side — understanding what it's like to manage cash flow
-              under pressure, make capital decisions with imperfect information, and keep a business
-              running through cycles that would break most spreadsheet jockeys.
+              The avocado isn't a logo. It's the first real food each of my daughters ate —
+              the first thing that nourished them outside their mother. My world is my girls,
+              and that's where the name starts: with the fruit that fed them before anything else.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              That operator instinct, combined with deep financial expertise, is the NPF difference.
-              We don't just report on your numbers — we help you command them.
+              The <em>three</em> matters too. An avocado grows slowly. It needs time, attention,
+              and patience that most modern businesses don't want to give anything. And anyone
+              who's ever tried to grow one from a pit knows you don't plant one seed — you plant
+              three. Because nature is honest about backup plans. Some won't take. Some take longer
+              than you expected. And if one is tended well, it becomes something that outlives you.
             </p>
-            <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 32 }}>
-              The same discipline that carries someone through 100-mile ultra marathons
-              and half Ironman races — the refusal to quit, the ability to make clear decisions
-              under extreme fatigue, the long-game thinking — is exactly what your finances need.
+            <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
+              That's how I think about the work. One plan isn't a plan. Real ownership means
+              scenarios — the primary case, the contingency when the season turns, and the
+              long-term track you're building toward whether you sell, succeed, or pass it on.
+              Three Seeds is named for the way that thinking shows up in everything we build
+              for clients.
+            </p>
+            <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 32, fontStyle: "italic" }}>
+              Slow growth. Constant attention. Three seeds in the ground, always.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Badge>U.S. Veteran</Badge>
@@ -65,7 +70,7 @@ export default function About() {
             <h3 style={{
               fontFamily: "'Space Mono', monospace", fontSize: 13,
               color: C.accent, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 32,
-            }}>Why NPF</h3>
+            }}>Why Three Seeds</h3>
             {[
               { q: "Not another accountant", a: "We don't just record history. We build the financial infrastructure that helps you see what's coming." },
               { q: "Capital-intensive expertise", a: "Equipment depreciation, seasonal cash flow, lender covenants — we speak your language because we live it." },

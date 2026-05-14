@@ -29,7 +29,7 @@ export default function Services() {
           <ServiceCard tier="Tier 02" title="Controller Services" isHighlight
             description="Financial oversight that catches problems before they become crises. Budgets, variance analysis, and audit-ready reporting."
             features={["Budget vs. actual reporting", "Cash flow forecasting", "Financial process design", "Audit preparation & support"]} />
-          <ServiceCard tier="Tier 03" title="Fractional CFO"
+          <ServiceCard tier="Tier 03" title="Part Time CFO"
             description="Strategic financial leadership. Capital allocation, lender relationships, growth planning — the judgment calls that move the needle."
             features={["Capital structure & debt strategy", "Scenario modeling & forecasting", "Board & lender reporting", "M&A and exit readiness"]} />
         </div>

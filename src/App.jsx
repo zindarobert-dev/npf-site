@@ -29,9 +29,9 @@ function GlobalStyles() {
 
 export default function App() {
   useEffect(() => {
-    if (!document.querySelector("#npf-fonts")) {
+    if (!document.querySelector("#three-seeds-fonts")) {
       const link = document.createElement("link");
-      link.id = "npf-fonts";
+      link.id = "three-seeds-fonts";
       link.rel = "stylesheet";
       link.href = FONT_LINK;
       document.head.appendChild(link);

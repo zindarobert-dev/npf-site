@@ -112,7 +112,7 @@ export default function Industries() {
             }}>B</div>
             <div>
               <div style={{ fontSize: 15, fontWeight: 600, color: C.dark }}>Bobby</div>
-              <div style={{ fontSize: 13, color: C.gray }}>Founder, Net Positive Financials</div>
+              <div style={{ fontSize: 13, color: C.gray }}>Founder, Three Seeds</div>
             </div>
           </div>
         </div>
