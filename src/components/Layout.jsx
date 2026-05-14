@@ -46,7 +46,7 @@ export default function Layout({ children }) {
           {/* Logo */}
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
             <img src="/logo.png" alt="Net Positive Financials" style={{
-              width: 38, height: 38, objectFit: "contain", borderRadius: 3,
+              width: 56, height: 56, objectFit: "contain", borderRadius: 3,
             }} />
             <span style={{
               fontFamily: "'Space Mono', monospace", fontSize: 14, color: C.dark, letterSpacing: "0.05em",
@@ -132,7 +132,7 @@ export default function Layout({ children }) {
           flexWrap: "wrap", gap: 20,
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img src="/logo.png" alt="NPF" style={{ width: 24, height: 24, objectFit: "contain", borderRadius: 2 }} />
+            <img src="/logo.png" alt="NPF" style={{ width: 36, height: 36, objectFit: "contain", borderRadius: 2 }} />
             <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray }}>
               © {new Date().getFullYear()} Net Positive Financials
             </span>
