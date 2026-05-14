@@ -1,4 +1,4 @@
-export const FONT_LINK = "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Manrope:wght@400;500;600;700;800&display=swap";
+export const FONT_LINK = "https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&family=Outfit:wght@300;400;500;600;700;800;900&family=Fraunces:wght@400;500;600;700&display=swap";
 
 export const C = {
   bg: "#EEEEEC",

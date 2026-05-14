@@ -49,12 +49,12 @@ export default function Layout({ children }) {
               width: 56, height: 56, objectFit: "contain", borderRadius: 3,
             }} />
             <span style={{
-              fontFamily: "'Manrope', sans-serif", fontSize: 20, color: C.dark,
-              fontWeight: 600, letterSpacing: "-0.01em",
+              fontFamily: "'Fraunces', serif", fontSize: 22, color: C.dark,
+              fontWeight: 500, letterSpacing: "-0.005em",
               display: "flex", flexDirection: "column", lineHeight: 1,
             }}>
-              <span>THREE</span>
-              <span>SEEDS</span>
+              <span>Three</span>
+              <span>Seeds</span>
             </span>
           </Link>
 
