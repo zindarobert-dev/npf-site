@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://threeseeds.io/sitemap.xml
+Sitemap: https://www.threeseeds.io/sitemap.xml
