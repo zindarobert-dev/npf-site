@@ -50,7 +50,7 @@ export default function Layout({ children }) {
             }} />
             <span style={{
               fontFamily: "'Outfit', sans-serif", fontSize: 20, color: C.dark,
-              fontWeight: 900, letterSpacing: "-0.02em",
+              fontWeight: 600, letterSpacing: "-0.01em",
               display: "flex", flexDirection: "column", lineHeight: 0.95,
             }}>
               <span>THREE</span>
