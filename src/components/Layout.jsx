@@ -45,15 +45,15 @@ export default function Layout({ children }) {
         }}>
           {/* Logo */}
           <Link to="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
-            <img src="/logo.png" alt="Net Positive Financials" style={{
+            <img src="/logo.png" alt="Three Seeds" style={{
               width: 56, height: 56, objectFit: "contain", borderRadius: 3,
             }} />
             <span style={{
               fontFamily: "'Space Mono', monospace", fontSize: 14, color: C.dark, letterSpacing: "0.05em",
               display: "flex", flexDirection: "column", lineHeight: 1.1,
             }}>
-              <span>NET POSITIVE</span>
-              <span>FINANCIALS</span>
+              <span>THREE</span>
+              <span>SEEDS</span>
             </span>
           </Link>
 
@@ -132,9 +132,9 @@ export default function Layout({ children }) {
           flexWrap: "wrap", gap: 20,
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img src="/logo.png" alt="NPF" style={{ width: 36, height: 36, objectFit: "contain", borderRadius: 2 }} />
+            <img src="/logo.png" alt="Three Seeds" style={{ width: 36, height: 36, objectFit: "contain", borderRadius: 2 }} />
             <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray }}>
-              © {new Date().getFullYear()} Net Positive Financials
+              © 2026 Three Seeds LLC. All rights reserved.
             </span>
           </div>
           <div style={{ display: "flex", gap: 24 }}>

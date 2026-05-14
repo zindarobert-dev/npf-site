@@ -23,7 +23,7 @@ export default function Home() {
         }} />
 
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1, width: "100%" }}>
-          <div className="fade-up"><Badge>Veteran-Owned · Fractional CFO</Badge></div>
+          <div className="fade-up"><Badge>Veteran-Owned · Part Time CFO</Badge></div>
           <h1 className="fade-up-d1" style={{
             fontFamily: "'Outfit', sans-serif",
             fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 900, lineHeight: 1.05,
