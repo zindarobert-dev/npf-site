@@ -41,12 +41,12 @@ export default function Layout({ children }) {
       }}>
         <div style={{
           maxWidth: 1200, margin: "0 auto",
-          display: "flex", alignItems: "center", justifyContent: "space-between", height: 225,
+          display: "flex", alignItems: "center", justifyContent: "space-between", height: 80,
         }}>
           {/* Logo */}
           <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <img src="/logo.png" alt="Three Seeds" style={{
-              height: 225, width: "auto", objectFit: "contain",
+              height: 70, width: "auto", objectFit: "contain",
             }} />
           </Link>
 
@@ -125,7 +125,7 @@ export default function Layout({ children }) {
           flexWrap: "wrap", gap: 20,
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img src="/logo.png" alt="Three Seeds" style={{ height: 130, width: "auto", objectFit: "contain" }} />
+            <img src="/logo.png" alt="Three Seeds" style={{ height: 40, width: "auto", objectFit: "contain" }} />
             <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray }}>
               © 2026 Three Seeds LLC. All rights reserved.
             </span>
