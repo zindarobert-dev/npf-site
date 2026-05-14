@@ -44,16 +44,10 @@ export default function Layout({ children }) {
           display: "flex", alignItems: "center", justifyContent: "space-between", height: 72,
         }}>
           {/* Logo */}
-          <Link to="/" style={{ display: "flex", alignItems: "center", gap: 12, textDecoration: "none" }}>
+          <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <img src="/logo.png" alt="Three Seeds" style={{
-              width: 56, height: 56, objectFit: "contain", borderRadius: 3,
+              height: 56, width: "auto", objectFit: "contain",
             }} />
-            <span style={{
-              fontFamily: "'Fraunces', serif", fontSize: 26, color: C.dark,
-              fontWeight: 500, letterSpacing: "-0.005em", lineHeight: 1,
-            }}>
-              Three Seeds
-            </span>
           </Link>
 
           {/* Desktop links */}
@@ -131,7 +125,7 @@ export default function Layout({ children }) {
           flexWrap: "wrap", gap: 20,
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img src="/logo.png" alt="Three Seeds" style={{ width: 36, height: 36, objectFit: "contain", borderRadius: 2 }} />
+            <img src="/logo.png" alt="Three Seeds" style={{ height: 40, width: "auto", objectFit: "contain" }} />
             <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray }}>
               © 2026 Three Seeds LLC. All rights reserved.
             </span>
