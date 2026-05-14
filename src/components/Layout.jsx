@@ -49,8 +49,9 @@ export default function Layout({ children }) {
               width: 56, height: 56, objectFit: "contain", borderRadius: 3,
             }} />
             <span style={{
-              fontFamily: "'Space Mono', monospace", fontSize: 14, color: C.dark, letterSpacing: "0.05em",
-              display: "flex", flexDirection: "column", lineHeight: 1.1,
+              fontFamily: "'Outfit', sans-serif", fontSize: 20, color: C.dark,
+              fontWeight: 900, letterSpacing: "-0.02em",
+              display: "flex", flexDirection: "column", lineHeight: 0.95,
             }}>
               <span>THREE</span>
               <span>SEEDS</span>
