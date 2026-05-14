@@ -41,12 +41,12 @@ export default function Layout({ children }) {
       }}>
         <div style={{
           maxWidth: 1200, margin: "0 auto",
-          display: "flex", alignItems: "center", justifyContent: "space-between", height: 180,
+          display: "flex", alignItems: "center", justifyContent: "space-between", height: 225,
         }}>
           {/* Logo */}
           <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
             <img src="/logo.png" alt="Three Seeds" style={{
-              height: 180, width: "auto", objectFit: "contain",
+              height: 225, width: "auto", objectFit: "contain",
             }} />
           </Link>
 
