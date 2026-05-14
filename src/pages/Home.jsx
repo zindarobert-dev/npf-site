@@ -7,7 +7,7 @@ export default function Home() {
     <PageWrapper>
       {/* ═══ HERO ═══ */}
       <section style={{
-        minHeight: "calc(100vh - 200px)", display: "flex", alignItems: "center",
+        minHeight: "calc(100vh - 150px)", display: "flex", alignItems: "center",
         padding: "60px clamp(20px, 5vw, 80px) 80px", position: "relative", overflow: "hidden",
       }}>
         <div style={{

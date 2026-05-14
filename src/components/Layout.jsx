@@ -41,7 +41,7 @@ export default function Layout({ children }) {
       }}>
         <div style={{
           maxWidth: 1200, margin: "0 auto",
-          display: "flex", alignItems: "center", justifyContent: "space-between", height: 200,
+          display: "flex", alignItems: "center", justifyContent: "space-between", height: 96,
         }}>
           {/* Logo */}
           <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>

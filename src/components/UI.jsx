@@ -141,7 +141,7 @@ export function IndustryTag({ label }) {
 
 export function PageWrapper({ children }) {
   return (
-    <div style={{ paddingTop: 200, minHeight: "calc(100vh - 120px)" }}>
+    <div style={{ paddingTop: 150, minHeight: "calc(100vh - 120px)" }}>
       {children}
     </div>
   );
