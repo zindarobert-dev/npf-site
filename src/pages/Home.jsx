@@ -76,10 +76,10 @@ export default function Home() {
           and decisions made without financial context.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 12 }}>
-          <PainCard icon="⚠" text="You can't tell if you'll make payroll in 60 days without pulling up three spreadsheets and guessing." />
-          <PainCard icon="⚠" text="Your equipment fleet is depreciating and you don't know which assets are earning their keep." />
-          <PainCard icon="⚠" text="Seasonality wrecks your cash flow every year, and every year you're surprised by it." />
-          <PainCard icon="⚠" text="You're making $8M in revenue but can't explain to your banker why you need a bigger line of credit." />
+          <PainCard number="01" text="You can't tell if you'll make payroll in 60 days without pulling up three spreadsheets and guessing." />
+          <PainCard number="02" text="Your equipment fleet is depreciating and you don't know which assets are earning their keep." />
+          <PainCard number="03" text="Seasonality wrecks your cash flow every year, and every year you're surprised by it." />
+          <PainCard number="04" text="You're making $8M in revenue but can't explain to your banker why you need a bigger line of credit." />
         </div>
         <div style={{ marginTop: 48, textAlign: "center" }}>
           <Link to="/services" style={{

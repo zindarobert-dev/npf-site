@@ -109,13 +109,23 @@ export function ServiceCard({ tier, title, description, features, isHighlight })
   );
 }
 
-export function PainCard({ icon, text }) {
+export function PainCard({ number, text }) {
   return (
     <div style={{
-      background: C.bgCard, border: `1px solid ${C.border}`,
-      padding: "24px 28px", display: "flex", alignItems: "flex-start", gap: 16, borderRadius: 3,
+      background: C.bgCard,
+      borderLeft: `3px solid ${C.accent}`,
+      borderTop: `1px solid ${C.border}`,
+      borderRight: `1px solid ${C.border}`,
+      borderBottom: `1px solid ${C.border}`,
+      padding: "26px 28px", borderRadius: 3,
     }}>
-      <span style={{ fontSize: 20, flexShrink: 0 }}>{icon}</span>
+      <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
+        <span style={{
+          fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.accent,
+          letterSpacing: "0.15em", fontWeight: 700,
+        }}>{number}</span>
+        <div style={{ height: 1, width: 24, background: C.accent, opacity: 0.5 }} />
+      </div>
       <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.grayLight, lineHeight: 1.65 }}>{text}</span>
     </div>
   );
