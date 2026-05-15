@@ -81,12 +81,51 @@ export default function Home() {
           <PainCard number="03" text="Seasonality wrecks your cash flow every year, and every year you're surprised by it." />
           <PainCard number="04" text="You're making $8M in revenue but can't explain to your banker why you need a bigger line of credit." />
         </div>
-        <div style={{ marginTop: 48, textAlign: "center" }}>
+      </Section>
+
+      {/* ═══ THE THREE SEEDS ═══ */}
+      <Section style={{ borderTop: `1px solid ${C.border}` }}>
+        <SectionLabel label="The Three Seeds" number="02" />
+        <h2 style={{
+          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 800, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
+        }}>
+          One plan isn't a plan.<br />
+          <span style={{ color: C.accent }}>Three is.</span>
+        </h2>
+        <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.7, maxWidth: 600, marginBottom: 48 }}>
+          You don't plant one seed — you plant three. Real ownership means scenarios:
+          the primary case, the contingency when the season turns, and the long-term
+          track you're building toward whether you sell, succeed, or pass it on.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16 }}>
+          {[
+            { num: "01", title: "Primary", desc: "The main operating case. Monthly close, cash flow forecast, decisions made on numbers you can trust." },
+            { num: "02", title: "Contingency", desc: "When the season turns. Stress-tested scenarios, lender-ready answers, and the runway you didn't know you had." },
+            { num: "03", title: "Legacy", desc: "The long-term track. Equity-grade financials built for whether you sell, succeed, or pass it on." },
+          ].map(({ num, title, desc }) => (
+            <div key={num} style={{
+              background: C.bgCard, border: `1px solid ${C.border}`,
+              padding: "36px 32px", borderRadius: 3, position: "relative",
+            }}>
+              <span style={{
+                fontFamily: "'Space Mono', monospace", fontSize: 32, fontWeight: 700,
+                color: C.accent, opacity: 0.25, display: "block", marginBottom: 16, lineHeight: 1,
+              }}>{num}</span>
+              <h3 style={{
+                fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 700,
+                color: C.dark, margin: "0 0 12px 0",
+              }}>{title}</h3>
+              <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.7, margin: 0 }}>{desc}</p>
+            </div>
+          ))}
+        </div>
+        <div style={{ marginTop: 56, textAlign: "center" }}>
           <Link to="/services" style={{
             color: C.accent, fontFamily: "'Space Mono', monospace", fontSize: 13,
             letterSpacing: "0.08em", textDecoration: "none", borderBottom: `1px solid ${C.accent}44`,
             paddingBottom: 2,
-          }}>SEE HOW WE FIX THIS →</Link>
+          }}>SEE THE SERVICE TIERS →</Link>
         </div>
       </Section>
     </PageWrapper>
