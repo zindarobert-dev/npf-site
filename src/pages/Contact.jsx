@@ -57,7 +57,7 @@ export default function Contact() {
             <div style={{ display: "flex", flexDirection: "column", gap: 20, marginBottom: 48 }}>
               {[
                 { icon: "◆", text: "Free 30-minute discovery call" },
-                { icon: "◆", text: "No contracts — month-to-month" },
+                { icon: "◆", text: "No contracts. Month-to-month." },
                 { icon: "◆", text: "Onboarding in under 2 weeks" },
               ].map(({ icon, text }, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 14 }}>
@@ -79,7 +79,7 @@ export default function Contact() {
               {[
                 "You fill out the form. Takes 60 seconds.",
                 "Bobby reviews your info and reaches out within 24 hours.",
-                "We hop on a 30-minute call — no pitch, just problem-solving.",
+                "We hop on a 30-minute call. No pitch, just problem-solving.",
                 "If it's a fit, we scope an engagement and start within two weeks.",
               ].map((step, i) => (
                 <div key={i} style={{ display: "flex", gap: 12, marginBottom: i < 3 ? 12 : 0 }}>

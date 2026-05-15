@@ -48,7 +48,7 @@ export default function Industries() {
           Built for businesses that<br /><span style={{ color: C.accent }}>move heavy things.</span>
         </h1>
         <p style={{ fontSize: 18, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 32, fontWeight: 300 }}>
-          We serve capital-intensive operators — businesses where cash flow is seasonal,
+          We serve capital-intensive operators: businesses where cash flow is seasonal,
           equipment depreciates, and a wrong financial call costs real money.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 0 }}>

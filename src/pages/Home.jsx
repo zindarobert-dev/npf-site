@@ -94,7 +94,7 @@ export default function Home() {
           <span style={{ color: C.accent }}>Three is.</span>
         </h2>
         <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.7, maxWidth: 600, marginBottom: 48 }}>
-          You don't plant one seed — you plant three. Real ownership means scenarios:
+          You don't plant one seed. You plant three. Real ownership means scenarios:
           the primary case, the contingency when the season turns, and the long-term
           track you're building toward whether you sell, succeed, or pass it on.
         </p>

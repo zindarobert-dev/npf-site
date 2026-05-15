@@ -33,20 +33,20 @@ export default function About() {
               Slow growth. Constant attention.
             </h2>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              The avocado isn't a logo. It's the first real food each of my daughters ate —
-              the first thing that nourished them outside their mother. My world is my girls,
+              The avocado isn't a logo. It's the first real food each of my daughters ate.
+              The first thing that nourished them outside their mother. My world is my girls,
               and that's where the name starts: with the fruit that fed them before anything else.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
               The <em>three</em> matters too. An avocado grows slowly. It needs time, attention,
               and patience that most modern businesses don't want to give anything. And anyone
-              who's ever tried to grow one from a pit knows you don't plant one seed — you plant
+              who's ever tried to grow one from a pit knows you don't plant one seed. You plant
               three. Because nature is honest about backup plans. Some won't take. Some take longer
               than you expected. And if one is tended well, it becomes something that outlives you.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
               That's how I think about the work. One plan isn't a plan. Real ownership means
-              scenarios — the primary case, the contingency when the season turns, and the
+              scenarios: the primary case, the contingency when the season turns, and the
               long-term track you're building toward whether you sell, succeed, or pass it on.
               Three Seeds is named for the way that thinking shows up in everything we build
               for clients.
@@ -73,8 +73,8 @@ export default function About() {
             }}>Why Three Seeds</h3>
             {[
               { q: "Not another accountant", a: "We don't just record history. We build the financial infrastructure that helps you see what's coming." },
-              { q: "Capital-intensive expertise", a: "Equipment depreciation, seasonal cash flow, lender covenants — we speak your language because we live it." },
-              { q: "CFO judgment, controller cost", a: "High-level strategic thinking priced for businesses that can't justify a $300K salary — but desperately need the insight." },
+              { q: "Capital-intensive expertise", a: "Equipment depreciation, seasonal cash flow, lender covenants. We speak your language because we live it." },
+              { q: "CFO judgment, controller cost", a: "High-level strategic thinking priced for businesses that can't justify a $300K salary, but desperately need the insight." },
               { q: "Built to earn trust", a: "Veteran discipline. Endurance mindset. We show up, we grind, and we don't quit when it gets hard." },
             ].map(({ q, a }, i) => (
               <div key={i} style={{ marginBottom: i < 3 ? 28 : 0 }}>
@@ -100,7 +100,7 @@ export default function About() {
             { title: "Transition, don't disrupt", desc: "We run parallel with your existing processes before taking over. Your operations keep running while we upgrade the financial infrastructure underneath." },
             { title: "Plain language", desc: "We translate financial complexity into operator decisions. No jargon, no 40-page reports nobody reads. Clear signals, clear actions." },
             { title: "Month-to-month", desc: "We earn your business every month. No long-term contracts, no lock-in. If we're not delivering value, you should be able to walk." },
-            { title: "Strategic, not just compliant", desc: "Any firm can keep you compliant. We position your finances to give you leverage — with lenders, with partners, with your own decision-making." },
+            { title: "Strategic, not just compliant", desc: "Any firm can keep you compliant. We position your finances to give you leverage: with lenders, with partners, with your own decision-making." },
             { title: "Built for operators", desc: "We're not here to serve tech startups or lifestyle businesses. We serve people who move dirt, pour concrete, haul freight, and pump oil." },
           ].map(({ title, desc }) => (
             <div key={title} style={{
