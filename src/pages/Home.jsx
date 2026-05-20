@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { C } from "../theme";
+import { C, F } from "../theme";
 import { Badge, PainCard, PageWrapper, Section, SectionLabel } from "../components/UI";
 
 export default function Home() {
@@ -11,23 +11,16 @@ export default function Home() {
         padding: "60px clamp(20px, 5vw, 80px) 80px", position: "relative", overflow: "hidden",
       }}>
         <div style={{
-          position: "absolute", inset: 0, opacity: 0.035,
-          backgroundImage: `linear-gradient(${C.accent} 1px, transparent 1px), linear-gradient(90deg, ${C.accent} 1px, transparent 1px)`,
-          backgroundSize: "80px 80px",
-        }} />
-        <div style={{
-          position: "absolute", top: "5%", right: "-15%",
-          width: 800, height: 800, borderRadius: "50%",
-          background: `radial-gradient(circle, ${C.accent}0A 0%, transparent 70%)`,
-          filter: "blur(100px)",
+          position: "absolute", inset: 0, pointerEvents: "none",
+          background: `radial-gradient(ellipse 60% 60% at 90% 110%, ${C.soil}14, transparent 60%)`,
         }} />
 
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1, width: "100%" }}>
           <div className="fade-up"><Badge>Veteran-Owned · Part Time CFO</Badge></div>
           <h1 className="fade-up-d1" style={{
-            fontFamily: "'Outfit', sans-serif",
-            fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 900, lineHeight: 1.05,
-            margin: "28px 0", maxWidth: 900, letterSpacing: "-0.03em", color: C.dark,
+            fontFamily: F.display,
+            fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 700, lineHeight: 1.02,
+            margin: "28px 0", maxWidth: 900, letterSpacing: "-0.025em", color: C.dark,
           }}>
             Financial Command<br />
             <span style={{ color: C.accent }}>Systems</span> for<br />
@@ -43,14 +36,14 @@ export default function Home() {
           <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 80 }}>
             <Link to="/contact" style={{
               background: C.accent, color: "#fff", border: "none", textDecoration: "none",
-              padding: "16px 36px", fontFamily: "'Space Mono', monospace",
+              padding: "16px 36px", fontFamily: F.mono,
               fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
             }}>Talk to Bobby →</Link>
             <Link to="/services" style={{
               background: "transparent", color: C.dark, border: `1px solid ${C.border}`,
-              padding: "16px 36px", fontFamily: "'Space Mono', monospace", textDecoration: "none",
+              padding: "16px 36px", fontFamily: F.mono, textDecoration: "none",
               fontSize: 13, fontWeight: 400, letterSpacing: "0.1em",
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
@@ -64,8 +57,8 @@ export default function Home() {
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <SectionLabel label="The Problem" number="01" />
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
-          fontWeight: 800, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
+          fontFamily: F.display, fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 700, lineHeight: 1.08, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.015em",
         }}>
           Your bookkeeper keeps the books.
           <br /><span style={{ color: C.gray }}>Nobody's commanding the finances.</span>
@@ -87,8 +80,8 @@ export default function Home() {
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <SectionLabel label="The Three Seeds" number="02" />
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
-          fontWeight: 800, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
+          fontFamily: F.display, fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 700, lineHeight: 1.08, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.015em",
         }}>
           One plan isn't a plan.<br />
           <span style={{ color: C.accent }}>Three is.</span>
@@ -109,12 +102,12 @@ export default function Home() {
               padding: "36px 32px", borderRadius: 3, position: "relative",
             }}>
               <span style={{
-                fontFamily: "'Space Mono', monospace", fontSize: 32, fontWeight: 700,
+                fontFamily: F.mono, fontSize: 32, fontWeight: 700,
                 color: C.accent, opacity: 0.25, display: "block", marginBottom: 16, lineHeight: 1,
               }}>{num}</span>
               <h3 style={{
-                fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 700,
-                color: C.dark, margin: "0 0 12px 0",
+                fontFamily: F.display, fontSize: 22, fontWeight: 700,
+                color: C.dark, margin: "0 0 12px 0", letterSpacing: "-0.005em",
               }}>{title}</h3>
               <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.7, margin: 0 }}>{desc}</p>
             </div>
@@ -122,7 +115,7 @@ export default function Home() {
         </div>
         <div style={{ marginTop: 56, textAlign: "center" }}>
           <Link to="/services" style={{
-            color: C.accent, fontFamily: "'Space Mono', monospace", fontSize: 13,
+            color: C.accent, fontFamily: F.mono, fontSize: 13,
             letterSpacing: "0.08em", textDecoration: "none", borderBottom: `1px solid ${C.accent}44`,
             paddingBottom: 2,
           }}>SEE THE SERVICE TIERS →</Link>

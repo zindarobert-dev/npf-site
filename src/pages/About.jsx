@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { C } from "../theme";
+import { C, F } from "../theme";
 import { Badge, SectionLabel, PageWrapper, Section } from "../components/UI";
 
 export default function About() {
@@ -9,8 +9,8 @@ export default function About() {
       <Section style={{ paddingTop: 100, paddingBottom: 40 }}>
         <SectionLabel label="About" number="04" />
         <h1 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
-          fontWeight: 900, lineHeight: 1.08, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.03em",
+          fontFamily: F.display, fontSize: "clamp(36px, 5vw, 64px)",
+          fontWeight: 700, lineHeight: 1.02, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.025em",
         }}>
           About <span style={{ color: C.accent }}>Three Seeds.</span>
         </h1>
@@ -27,8 +27,8 @@ export default function About() {
         }}>
           <div>
             <h2 style={{
-              fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
-              fontWeight: 800, lineHeight: 1.15, marginBottom: 24, letterSpacing: "-0.02em",
+              fontFamily: F.display, fontSize: "clamp(24px, 3.5vw, 36px)",
+              fontWeight: 700, lineHeight: 1.08, marginBottom: 24, letterSpacing: "-0.015em",
             }}>
               Slow growth. Constant attention.
             </h2>
@@ -68,7 +68,7 @@ export default function About() {
             padding: "40px 32px", borderRadius: 3,
           }}>
             <h3 style={{
-              fontFamily: "'Space Mono', monospace", fontSize: 13,
+              fontFamily: F.mono, fontSize: 13,
               color: C.accent, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 32,
             }}>Why Three Seeds</h3>
             {[
@@ -89,8 +89,8 @@ export default function About() {
       {/* Principles */}
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
-          fontWeight: 800, lineHeight: 1.15, marginBottom: 48, letterSpacing: "-0.02em",
+          fontFamily: F.display, fontSize: "clamp(24px, 3.5vw, 36px)",
+          fontWeight: 700, lineHeight: 1.08, marginBottom: 48, letterSpacing: "-0.015em",
         }}>
           How we operate
         </h2>
@@ -108,8 +108,8 @@ export default function About() {
               padding: "28px 24px", borderRadius: 3,
             }}>
               <h3 style={{
-                fontFamily: "'Outfit', sans-serif", fontSize: 16, fontWeight: 700,
-                color: C.dark, marginBottom: 10,
+                fontFamily: F.display, fontSize: 18, fontWeight: 700,
+                color: C.dark, marginBottom: 10, letterSpacing: "-0.005em",
               }}>{title}</h3>
               <p style={{ fontSize: 14, color: C.gray, lineHeight: 1.65, margin: 0 }}>{desc}</p>
             </div>
@@ -120,15 +120,15 @@ export default function About() {
       {/* CTA */}
       <Section style={{ borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
-          fontWeight: 800, marginBottom: 16, letterSpacing: "-0.02em",
+          fontFamily: F.display, fontSize: "clamp(24px, 3.5vw, 36px)",
+          fontWeight: 700, marginBottom: 16, letterSpacing: "-0.015em",
         }}>Let's see if we're the right fit.</h2>
         <p style={{ fontSize: 16, color: C.gray, marginBottom: 32, maxWidth: 440, margin: "0 auto 32px" }}>
           Straight talk. No obligations. 30 minutes.
         </p>
         <Link to="/contact" style={{
           background: C.accent, color: "#fff", textDecoration: "none",
-          padding: "16px 40px", fontFamily: "'Space Mono', monospace",
+          padding: "16px 40px", fontFamily: F.mono,
           fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
           textTransform: "uppercase", borderRadius: 3, display: "inline-block",
         }}>Talk to Bobby →</Link>

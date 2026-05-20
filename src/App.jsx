@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { FONT_LINK, C } from "./theme";
+import { FONT_LINK, C, F } from "./theme";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
@@ -13,8 +13,8 @@ function GlobalStyles() {
     <style>{`
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       html { scroll-behavior: smooth; }
-      body { background: ${C.bg}; font-family: 'Outfit', sans-serif; -webkit-font-smoothing: antialiased; }
-      ::selection { background: ${C.accent}; color: #fff; }
+      body { background: ${C.bg}; color: ${C.dark}; font-family: ${F.sans}; font-size: 16px; line-height: 1.55; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; font-feature-settings: "ss01", "cv11"; }
+      ::selection { background: ${C.accent}; color: ${C.bgCard}; }
       a { transition: color 0.2s, opacity 0.2s; }
       @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
       .fade-up { animation: fadeUp 0.8s ease forwards; }

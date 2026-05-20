@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { C } from "../theme";
+import { C, F } from "../theme";
 import { IndustryTag, SectionLabel, PageWrapper, Section } from "../components/UI";
 
 const industries = [
@@ -42,8 +42,8 @@ export default function Industries() {
       <Section style={{ paddingTop: 100, paddingBottom: 40 }}>
         <SectionLabel label="Industries" number="03" />
         <h1 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
-          fontWeight: 900, lineHeight: 1.08, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.03em",
+          fontFamily: F.display, fontSize: "clamp(36px, 5vw, 64px)",
+          fontWeight: 700, lineHeight: 1.02, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.025em",
         }}>
           Built for businesses that<br /><span style={{ color: C.accent }}>move heavy things.</span>
         </h1>
@@ -61,8 +61,8 @@ export default function Industries() {
       {/* Industry deep-dives */}
       <Section style={{ borderTop: `1px solid ${C.border}`, paddingTop: 60 }}>
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
-          fontWeight: 800, lineHeight: 1.15, marginBottom: 48, letterSpacing: "-0.02em",
+          fontFamily: F.display, fontSize: "clamp(24px, 3.5vw, 36px)",
+          fontWeight: 700, lineHeight: 1.08, marginBottom: 48, letterSpacing: "-0.015em",
         }}>
           We know your world
         </h2>
@@ -73,7 +73,7 @@ export default function Industries() {
               padding: "32px 28px", borderRadius: 3,
             }}>
               <h3 style={{
-                fontFamily: "'Space Mono', monospace", fontSize: 13, color: C.accent,
+                fontFamily: F.mono, fontSize: 13, color: C.accent,
                 textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 16,
               }}>{name}</h3>
               <div style={{ marginBottom: 16 }}>
@@ -97,8 +97,8 @@ export default function Industries() {
           borderRadius: 3, maxWidth: 750,
         }}>
           <p style={{
-            fontFamily: "'Outfit', sans-serif", fontSize: 20, fontWeight: 500,
-            color: C.dark, lineHeight: 1.7, margin: 0, fontStyle: "italic",
+            fontFamily: F.display, fontSize: 24, fontWeight: 400,
+            color: C.dark, lineHeight: 1.4, margin: 0, fontStyle: "italic", letterSpacing: "-0.005em",
           }}>
             "AI can automate your bookkeeping. It can't sit across from your banker
             and explain why your cash position is seasonal, not structural.
@@ -108,7 +108,7 @@ export default function Industries() {
             <div style={{
               width: 40, height: 40, borderRadius: "50%", background: C.accent,
               display: "flex", alignItems: "center", justifyContent: "center",
-              fontFamily: "'Space Mono', monospace", fontSize: 14, fontWeight: 700, color: "#fff",
+              fontFamily: F.mono, fontSize: 14, fontWeight: 700, color: "#fff",
             }}>B</div>
             <div>
               <div style={{ fontSize: 15, fontWeight: 600, color: C.dark }}>Bobby</div>
@@ -121,15 +121,15 @@ export default function Industries() {
       {/* CTA */}
       <Section style={{ borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
-          fontWeight: 800, marginBottom: 16, letterSpacing: "-0.02em",
+          fontFamily: F.display, fontSize: "clamp(24px, 3.5vw, 36px)",
+          fontWeight: 700, marginBottom: 16, letterSpacing: "-0.015em",
         }}>See yourself here?</h2>
         <p style={{ fontSize: 16, color: C.gray, marginBottom: 32, maxWidth: 440, margin: "0 auto 32px" }}>
           Let's talk about how Financial Command Systems work for your specific industry.
         </p>
         <Link to="/contact" style={{
           background: C.accent, color: "#fff", textDecoration: "none",
-          padding: "16px 40px", fontFamily: "'Space Mono', monospace",
+          padding: "16px 40px", fontFamily: F.mono,
           fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
           textTransform: "uppercase", borderRadius: 3, display: "inline-block",
         }}>Talk to Bobby →</Link>
