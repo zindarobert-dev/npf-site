@@ -29,7 +29,7 @@ export default function Layout({ children }) {
   const isActive = (to) => location.pathname === to;
 
   return (
-    <div style={{ background: C.bg, color: C.dark, minHeight: "100vh", fontFamily: "'Outfit', sans-serif", overflowX: "hidden" }}>
+    <div style={{ background: C.bg, color: C.dark, minHeight: "100vh", fontFamily: "'Inter', sans-serif", overflowX: "hidden" }}>
 
       {/* ═══ NAV ═══ */}
       <nav style={{
@@ -57,7 +57,7 @@ export default function Layout({ children }) {
               {navLinks.map(({ label, to }) => (
                 <Link key={to} to={to} style={{
                   textDecoration: "none",
-                  fontFamily: "'Outfit', sans-serif", fontSize: 14, fontWeight: isActive(to) ? 600 : 400,
+                  fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: isActive(to) ? 600 : 400,
                   color: isActive(to) ? C.accent : C.gray, transition: "color 0.2s",
                   letterSpacing: "0.02em", borderBottom: isActive(to) ? `2px solid ${C.accent}` : "2px solid transparent",
                   paddingBottom: 4,
@@ -66,7 +66,7 @@ export default function Layout({ children }) {
             </div>
             <Link to="/contact" style={{
               background: C.accent, color: "#fff", border: "none", textDecoration: "none",
-              padding: "10px 24px", fontFamily: "'Space Mono', monospace",
+              padding: "10px 24px", fontFamily: "'Inter', sans-serif",
               fontSize: 12, fontWeight: 700, letterSpacing: "0.08em",
               textTransform: "uppercase", borderRadius: 3, transition: "transform 0.2s",
               display: "inline-block",
@@ -127,20 +127,20 @@ export default function Layout({ children }) {
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
             <img src="/logo.png" alt="Three Seeds" style={{ height: 40, width: "auto", objectFit: "contain" }} />
-            <span style={{ fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray }}>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: C.gray }}>
               © 2026 Three Seeds LLC. All rights reserved.
             </span>
           </div>
           <div style={{ display: "flex", gap: 24 }}>
             {navLinks.map(({ label, to }) => (
               <Link key={to} to={to} style={{
-                fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.gray,
+                fontFamily: "'Inter', sans-serif", fontSize: 11, color: C.gray,
                 textDecoration: "none", letterSpacing: "0.05em",
               }}>{label}</Link>
             ))}
           </div>
           <span style={{
-            fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.gray, letterSpacing: "0.1em",
+            fontFamily: "'Inter', sans-serif", fontSize: 11, color: C.gray, letterSpacing: "0.1em",
           }}>VETERAN-OWNED · USA</span>
         </div>
       </footer>

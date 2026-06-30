@@ -15,7 +15,7 @@ function GlobalStyles() {
     <style>{`
       *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
       html { scroll-behavior: smooth; }
-      body { background: ${C.bg}; font-family: 'Outfit', sans-serif; -webkit-font-smoothing: antialiased; }
+      body { background: ${C.bg}; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
       ::selection { background: ${C.accent}; color: #fff; }
       a { transition: color 0.2s, opacity 0.2s; }
       @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }

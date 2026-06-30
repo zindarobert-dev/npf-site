@@ -6,7 +6,7 @@ export function Badge({ children }) {
   return (
     <span style={{
       display: "inline-block", padding: "5px 14px", fontSize: 11,
-      fontFamily: "'Space Mono', monospace", textTransform: "uppercase",
+      fontFamily: "'Inter', sans-serif", textTransform: "uppercase",
       letterSpacing: "0.12em", color: C.accent,
       background: C.accentDim, border: `1px solid ${C.accent}22`, borderRadius: 2,
     }}>{children}</span>
@@ -17,11 +17,11 @@ export function SectionLabel({ label, number }) {
   return (
     <div style={{ display: "flex", alignItems: "center", gap: 16, marginBottom: 40 }}>
       <span style={{
-        fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.accent, letterSpacing: "0.15em",
+        fontFamily: "'Inter', sans-serif", fontSize: 12, color: C.accent, letterSpacing: "0.15em",
       }}>{number}</span>
       <div style={{ height: 1, width: 40, background: C.accent }} />
       <span style={{
-        fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray,
+        fontFamily: "'Inter', sans-serif", fontSize: 12, color: C.gray,
         textTransform: "uppercase", letterSpacing: "0.15em",
       }}>{label}</span>
     </div>
@@ -69,22 +69,22 @@ export function ServiceCard({ tier, title, description, features, isHighlight })
         <div style={{ position: "absolute", top: 0, left: 0, right: 0, height: 3, background: C.accent }} />
       )}
       <span style={{
-        fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.accent,
+        fontFamily: "'Inter', sans-serif", fontSize: 11, color: C.accent,
         textTransform: "uppercase", letterSpacing: "0.18em", marginBottom: 16,
       }}>{tier}</span>
       <h3 style={{
-        fontFamily: "'Outfit', sans-serif", fontSize: 26, fontWeight: 700,
+        fontFamily: "'Inter', sans-serif", fontSize: 26, fontWeight: 700,
         color: C.dark, margin: "0 0 16px 0",
       }}>{title}</h3>
       <p style={{
-        fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.gray,
+        fontFamily: "'Inter', sans-serif", fontSize: 15, color: C.gray,
         lineHeight: 1.7, margin: "0 0 28px 0",
       }}>{description}</p>
       <div style={{ display: "flex", flexDirection: "column", gap: 10, flex: 1 }}>
         {features.map((f, i) => (
           <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
             <span style={{ color: C.accent, fontSize: 14, marginTop: 2, flexShrink: 0 }}>→</span>
-            <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 14, color: C.grayLight, lineHeight: 1.6 }}>{f}</span>
+            <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: C.grayLight, lineHeight: 1.6 }}>{f}</span>
           </div>
         ))}
       </div>
@@ -98,7 +98,7 @@ export function ServiceCard({ tier, title, description, features, isHighlight })
           background: bh ? C.accent : "transparent",
           color: bh ? "#fff" : C.accent,
           border: `1px solid ${C.accent}`,
-          fontFamily: "'Space Mono', monospace",
+          fontFamily: "'Inter', sans-serif",
           fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
           textTransform: "uppercase", textDecoration: "none",
           textAlign: "center", borderRadius: 2,
@@ -121,12 +121,12 @@ export function PainCard({ number, text }) {
     }}>
       <div style={{ display: "flex", alignItems: "center", gap: 12, marginBottom: 14 }}>
         <span style={{
-          fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.accent,
+          fontFamily: "'Inter', sans-serif", fontSize: 11, color: C.accent,
           letterSpacing: "0.15em", fontWeight: 700,
         }}>{number}</span>
         <div style={{ height: 1, width: 24, background: C.accent, opacity: 0.5 }} />
       </div>
-      <span style={{ fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.grayLight, lineHeight: 1.65 }}>{text}</span>
+      <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 15, color: C.grayLight, lineHeight: 1.65 }}>{text}</span>
     </div>
   );
 }
@@ -139,7 +139,7 @@ export function IndustryTag({ label }) {
       onMouseLeave={() => setH(false)}
       style={{
         display: "inline-block", padding: "10px 20px",
-        fontFamily: "'Space Mono', monospace", fontSize: 12, letterSpacing: "0.08em",
+        fontFamily: "'Inter', sans-serif", fontSize: 12, letterSpacing: "0.08em",
         color: h ? C.accent : C.grayLight,
         background: h ? C.accentDim : "transparent",
         border: `1px solid ${h ? C.accent + "44" : C.border}`,

@@ -19,11 +19,11 @@ function MetaRow({ atGlance, industry, engagement, type }) {
       {items.map(({ label, value }) => (
         <div key={label}>
           <div style={{
-            fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.accent,
+            fontFamily: "'Inter', sans-serif", fontSize: 11, color: C.accent,
             textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 8,
           }}>{label}</div>
           <div style={{
-            fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.dark,
+            fontFamily: "'Inter', sans-serif", fontSize: 15, color: C.dark,
             lineHeight: 1.5, fontWeight: 500,
           }}>{value}</div>
         </div>
@@ -36,7 +36,7 @@ function Subsection({ heading, children }) {
   return (
     <div style={{ marginBottom: 32 }}>
       <h3 style={{
-        fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 700,
+        fontFamily: "'Inter', sans-serif", fontSize: 22, fontWeight: 700,
         color: C.dark, marginBottom: 16, letterSpacing: "-0.01em",
       }}>{heading}</h3>
       {children}
@@ -47,7 +47,7 @@ function Subsection({ heading, children }) {
 function Paragraph({ children }) {
   return (
     <p style={{
-      fontFamily: "'Outfit', sans-serif", fontSize: 16, color: C.grayLight,
+      fontFamily: "'Inter', sans-serif", fontSize: 16, color: C.grayLight,
       lineHeight: 1.75, marginBottom: 16,
     }}>{children}</p>
   );
@@ -64,7 +64,7 @@ export default function CaseStudyDetail() {
       {/* Breadcrumb back link */}
       <Section style={{ paddingTop: 100, paddingBottom: 20 }}>
         <Link to="/case-studies" style={{
-          fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.gray,
+          fontFamily: "'Inter', sans-serif", fontSize: 12, color: C.gray,
           letterSpacing: "0.1em", textTransform: "uppercase", textDecoration: "none",
           display: "inline-flex", alignItems: "center", gap: 8,
         }}>
@@ -76,8 +76,8 @@ export default function CaseStudyDetail() {
       <Section style={{ paddingTop: 20, paddingBottom: 40 }}>
         <article style={{ maxWidth: 820 }}>
           <h1 style={{
-            fontFamily: "'Outfit', sans-serif", fontSize: "clamp(32px, 4.5vw, 52px)",
-            fontWeight: 900, lineHeight: 1.1, marginBottom: 32, letterSpacing: "-0.03em",
+            fontFamily: "'Inter', sans-serif", fontSize: "clamp(32px, 4.5vw, 52px)",
+            fontWeight: 700, lineHeight: 1.1, marginBottom: 32, letterSpacing: "-0.03em",
             color: C.dark,
           }}>{cs.title}</h1>
 
@@ -105,7 +105,7 @@ export default function CaseStudyDetail() {
       {/* Confidentiality note */}
       <Section style={{ borderTop: `1px solid ${C.border}`, paddingTop: 40, paddingBottom: 40 }}>
         <p style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: 13, color: C.gray,
+          fontFamily: "'Inter', sans-serif", fontSize: 13, color: C.gray,
           lineHeight: 1.6, fontStyle: "italic", maxWidth: 820, margin: 0,
         }}>
           Confidentiality note: All client names and identifying details have been omitted.
@@ -116,15 +116,15 @@ export default function CaseStudyDetail() {
       {/* CTA */}
       <Section style={{ borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
-          fontWeight: 800, marginBottom: 16, letterSpacing: "-0.02em",
+          fontFamily: "'Inter', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
+          fontWeight: 700, marginBottom: 16, letterSpacing: "-0.02em",
         }}>Want results like these?</h2>
         <p style={{ fontSize: 16, color: C.gray, marginBottom: 32, maxWidth: 440, margin: "0 auto 32px" }}>
           Start with a free discovery call. We'll talk about your numbers and where they need to go.
         </p>
         <Link to="/contact" style={{
           background: C.accent, color: "#fff", textDecoration: "none",
-          padding: "16px 40px", fontFamily: "'Space Mono', monospace",
+          padding: "16px 40px", fontFamily: "'Inter', sans-serif",
           fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
           textTransform: "uppercase", borderRadius: 3, display: "inline-block",
         }}>Talk to Bobby →</Link>

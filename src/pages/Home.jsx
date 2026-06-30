@@ -25,8 +25,8 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1, width: "100%" }}>
           <div className="fade-up"><Badge>Veteran-Owned · Part Time CFO</Badge></div>
           <h1 className="fade-up-d1" style={{
-            fontFamily: "'Outfit', sans-serif",
-            fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 900, lineHeight: 1.05,
+            fontFamily: "'Inter', sans-serif",
+            fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 700, lineHeight: 1.05,
             margin: "28px 0", maxWidth: 900, letterSpacing: "-0.03em", color: C.dark,
           }}>
             Financial Command<br />
@@ -43,14 +43,14 @@ export default function Home() {
           <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 80 }}>
             <Link to="/contact" style={{
               background: C.accent, color: "#fff", border: "none", textDecoration: "none",
-              padding: "16px 36px", fontFamily: "'Space Mono', monospace",
+              padding: "16px 36px", fontFamily: "'Inter', sans-serif",
               fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
             }}>Talk to Bobby →</Link>
             <Link to="/services" style={{
               background: "transparent", color: C.dark, border: `1px solid ${C.border}`,
-              padding: "16px 36px", fontFamily: "'Space Mono', monospace", textDecoration: "none",
+              padding: "16px 36px", fontFamily: "'Inter', sans-serif", textDecoration: "none",
               fontSize: 13, fontWeight: 400, letterSpacing: "0.1em",
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
@@ -64,8 +64,8 @@ export default function Home() {
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <SectionLabel label="The Problem" number="01" />
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
-          fontWeight: 800, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
+          fontFamily: "'Inter', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 700, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
         }}>
           Your bookkeeper keeps the books.
           <br /><span style={{ color: C.gray }}>Nobody's commanding the finances.</span>
@@ -87,8 +87,8 @@ export default function Home() {
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <SectionLabel label="The Three Seeds" number="02" />
         <h2 style={{
-          fontFamily: "'Outfit', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
-          fontWeight: 800, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
+          fontFamily: "'Inter', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 700, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
         }}>
           One plan isn't a plan.<br />
           <span style={{ color: C.accent }}>Three is.</span>
@@ -109,11 +109,11 @@ export default function Home() {
               padding: "36px 32px", borderRadius: 3, position: "relative",
             }}>
               <span style={{
-                fontFamily: "'Space Mono', monospace", fontSize: 32, fontWeight: 700,
+                fontFamily: "'Inter', sans-serif", fontSize: 32, fontWeight: 700,
                 color: C.accent, opacity: 0.25, display: "block", marginBottom: 16, lineHeight: 1,
               }}>{num}</span>
               <h3 style={{
-                fontFamily: "'Outfit', sans-serif", fontSize: 22, fontWeight: 700,
+                fontFamily: "'Inter', sans-serif", fontSize: 22, fontWeight: 700,
                 color: C.dark, margin: "0 0 12px 0",
               }}>{title}</h3>
               <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.7, margin: 0 }}>{desc}</p>
@@ -122,7 +122,7 @@ export default function Home() {
         </div>
         <div style={{ marginTop: 56, textAlign: "center" }}>
           <Link to="/services" style={{
-            color: C.accent, fontFamily: "'Space Mono', monospace", fontSize: 13,
+            color: C.accent, fontFamily: "'Inter', sans-serif", fontSize: 13,
             letterSpacing: "0.08em", textDecoration: "none", borderBottom: `1px solid ${C.accent}44`,
             paddingBottom: 2,
           }}>SEE THE SERVICE TIERS →</Link>
