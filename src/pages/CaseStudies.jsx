@@ -1,83 +1,48 @@
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { C } from "../theme";
 import { SectionLabel, PageWrapper, Section } from "../components/UI";
+import { caseStudies } from "../data/caseStudies";
 
-const caseStudies = [
-  {
-    title: "A Finance Command System for a Subscription Platform",
-    atGlance: "Automated every finance function outside of bookkeeping",
-    industry: "Wellness / online services platform",
-    engagement: "Part Time CFO",
-    type: "Finance transformation & custom software",
-    challenge: "A growth-stage company running a fully remote team was managing its finances across QuickBooks Online and a separate platform-management system. The setup created constant friction. Recognizing revenue required manual journal entries every period, and the same underlying data was needed to calculate what the company owed the contractors delivering services on its platform. The business also had no forecasting capability built for the way it actually made money, a subscription model with several distinct plan types that new customers signed up for. Leadership was making scaling decisions without a clear, forward-looking financial picture.",
-    approach: [
-      "Serving as Part Time CFO, I went beyond advising and built the tooling the business needed. I consolidated the company's historical financials and designed a custom financial-operations app on a modern stack (Vercel, Supabase, GitHub) that automates every finance function outside of bookkeeping.",
-      "Inside the app, I built a forecasting engine comparable to Jirav but tailored to the company's reality, designed to capture the unique subscription types and plan combinations new businesses encounter on the platform. I automated the journal entries required for revenue recognition and the calculations that determine contractor payouts, replacing slow, error-prone manual work with reliable processes. I also built a client meeting hub that logs every meeting, drafts follow-ups, suggests the next agenda, and turns needs into automated to-dos.",
-    ],
-    results: "Leadership gained a single source of truth for historical performance plus forward-looking forecasts built specifically for their subscription model. Revenue recognition and contractor-payment calculations became automated and accurate, eliminating recurring manual journal-entry work. The remote team gained dependable, real-time financial visibility, replacing spreadsheets and guesswork with a durable, custom-fit system that runs itself and continues to support planning and scaling decisions.",
-  },
-  {
-    title: "A $10M+ Asset Register, Rebuilt as a Custom App",
-    atGlance: "$10M+ tracked across 200+ assets",
-    industry: "Oil & gas",
-    engagement: "Controller / CFO support",
-    type: "Custom software & financial reporting",
-    challenge: "An equipment-intensive oil & gas operator had accumulated a large, complex fixed-asset base over years of growth, a register exceeding $10M spread across more than 200 individual pieces of equipment. The records had drifted out of order. Asset detail was incomplete, classifications were inconsistent, and depreciation could no longer be trusted. Because fixed assets and depreciation flow directly into both financial statements and tax filings, the unreliable register undermined confidence in the company's reported numbers and made capital decisions harder than they needed to be.",
-    approach: [
-      "Rather than deliver a one-time spreadsheet cleanup, I built a custom application to track all 200+ pieces of equipment and keep them accurate going forward. For any asset, the client can drill into its serial number, original invoices, depreciation schedule, and fair market value, all reconciled directly to the books.",
-      "Standing the app up meant validating every asset, correcting classifications, and rebuilding depreciation schedules so they were accurate and defensible, aligned to support both financial reporting and tax depreciation. The result turned a recurring source of uncertainty into a durable system the business owns.",
-    ],
-    results: "The client ended up with an accurate, audit-ready fixed-asset register and dependable depreciation, now backed by a tool that makes every asset's history transparent on demand. The reliability of their financial statements and tax positions improved measurably, and leadership could finally trust their reported asset base when making capital and planning decisions.",
-  },
-];
-
-function MetaRow({ atGlance, industry, engagement, type }) {
-  const items = [
-    { label: "At a glance", value: atGlance },
-    { label: "Industry", value: industry },
-    { label: "Engagement", value: engagement },
-    { label: "Type", value: type },
-  ];
+function CaseStudyCard({ cs }) {
+  const [h, setH] = useState(false);
   return (
-    <div style={{
-      display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
-      gap: 20, padding: "24px 0", marginBottom: 40,
-      borderTop: `1px solid ${C.border}`, borderBottom: `1px solid ${C.border}`,
-    }}>
-      {items.map(({ label, value }) => (
-        <div key={label}>
-          <div style={{
-            fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.accent,
-            textTransform: "uppercase", letterSpacing: "0.12em", marginBottom: 8,
-          }}>{label}</div>
-          <div style={{
-            fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.dark,
-            lineHeight: 1.5, fontWeight: 500,
-          }}>{value}</div>
-        </div>
-      ))}
-    </div>
-  );
-}
-
-function Subsection({ heading, children }) {
-  return (
-    <div style={{ marginBottom: 32 }}>
+    <Link
+      to={`/case-studies/${cs.slug}`}
+      onMouseEnter={() => setH(true)}
+      onMouseLeave={() => setH(false)}
+      style={{
+        textDecoration: "none", display: "block",
+        background: h ? C.bgCardHover : C.bgCard,
+        border: `1px solid ${h ? C.accent + "44" : C.border}`,
+        padding: "36px 32px", borderRadius: 3,
+        transition: "all 0.3s ease",
+        display: "flex", flexDirection: "column",
+      }}
+    >
+      <span style={{
+        fontFamily: "'Space Mono', monospace", fontSize: 11, color: C.accent,
+        textTransform: "uppercase", letterSpacing: "0.14em", marginBottom: 16,
+      }}>{cs.industry}</span>
       <h3 style={{
-        fontFamily: "'Outfit', sans-serif", fontSize: 20, fontWeight: 700,
-        color: C.dark, marginBottom: 16, letterSpacing: "-0.01em",
-      }}>{heading}</h3>
-      {children}
-    </div>
-  );
-}
-
-function Paragraph({ children }) {
-  return (
-    <p style={{
-      fontFamily: "'Outfit', sans-serif", fontSize: 16, color: C.grayLight,
-      lineHeight: 1.75, marginBottom: 16,
-    }}>{children}</p>
+        fontFamily: "'Outfit', sans-serif", fontSize: 24, fontWeight: 700,
+        color: C.dark, margin: "0 0 16px 0", lineHeight: 1.2, letterSpacing: "-0.01em",
+      }}>{cs.title}</h3>
+      <p style={{
+        fontFamily: "'Outfit', sans-serif", fontSize: 15, color: C.gray,
+        lineHeight: 1.65, margin: "0 0 24px 0", flex: 1,
+      }}>{cs.summary}</p>
+      <div style={{
+        display: "flex", alignItems: "center", gap: 8,
+        paddingTop: 20, borderTop: `1px solid ${C.border}`,
+      }}>
+        <span style={{
+          fontFamily: "'Space Mono', monospace", fontSize: 12, color: C.accent,
+          letterSpacing: "0.08em", fontWeight: 700, textTransform: "uppercase",
+        }}>Read Case Study</span>
+        <span style={{ color: C.accent, fontSize: 14, transform: h ? "translateX(4px)" : "none", transition: "transform 0.25s ease" }}>→</span>
+      </div>
+    </Link>
   );
 }
 
@@ -101,37 +66,15 @@ export default function CaseStudies() {
         </p>
       </Section>
 
-      {/* Case studies */}
-      {caseStudies.map((cs, i) => (
-        <Section key={cs.title} style={{ borderTop: `1px solid ${C.border}`, paddingTop: 64, paddingBottom: 64 }}>
-          <article style={{ maxWidth: 820 }}>
-            <h2 style={{
-              fontFamily: "'Outfit', sans-serif", fontSize: "clamp(26px, 3.5vw, 40px)",
-              fontWeight: 800, lineHeight: 1.15, marginBottom: 24, letterSpacing: "-0.02em",
-              color: C.dark,
-            }}>{cs.title}</h2>
-
-            <MetaRow
-              atGlance={cs.atGlance}
-              industry={cs.industry}
-              engagement={cs.engagement}
-              type={cs.type}
-            />
-
-            <Subsection heading="The Challenge">
-              <Paragraph>{cs.challenge}</Paragraph>
-            </Subsection>
-
-            <Subsection heading="The Approach">
-              {cs.approach.map((p, j) => <Paragraph key={j}>{p}</Paragraph>)}
-            </Subsection>
-
-            <Subsection heading="The Results">
-              <Paragraph>{cs.results}</Paragraph>
-            </Subsection>
-          </article>
-        </Section>
-      ))}
+      {/* Cards */}
+      <Section style={{ paddingTop: 20 }}>
+        <div style={{
+          display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          gap: 20,
+        }}>
+          {caseStudies.map(cs => <CaseStudyCard key={cs.slug} cs={cs} />)}
+        </div>
+      </Section>
 
       {/* Confidentiality note */}
       <Section style={{ borderTop: `1px solid ${C.border}`, paddingTop: 40, paddingBottom: 40 }}>

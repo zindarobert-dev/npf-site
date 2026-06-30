@@ -21,6 +21,16 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.threeseeds.io/case-studies/finance-command-system</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.threeseeds.io/case-studies/asset-register</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
     <loc>https://www.threeseeds.io/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
