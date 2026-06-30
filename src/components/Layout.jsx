@@ -21,6 +21,7 @@ export default function Layout({ children }) {
   const navLinks = [
     { label: "Services", to: "/services" },
     { label: "Industries", to: "/industries" },
+    { label: "Case Studies", to: "/case-studies" },
     { label: "About", to: "/about" },
     { label: "Contact", to: "/contact" },
   ];

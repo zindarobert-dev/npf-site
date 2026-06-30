@@ -16,6 +16,11 @@
     <priority>0.8</priority>
   </url>
   <url>
+    <loc>https://www.threeseeds.io/case-studies</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://www.threeseeds.io/about</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
