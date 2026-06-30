@@ -86,15 +86,51 @@ export default function Home() {
       {/* ═══ THE THREE SEEDS ═══ */}
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <SectionLabel label="The Three Seeds" number="02" />
-        <p style={{
-          fontFamily: "'Inter', sans-serif", fontSize: "clamp(24px, 3.2vw, 36px)",
-          fontWeight: 500, lineHeight: 1.35, maxWidth: 880, letterSpacing: "-0.02em",
-          color: C.dark, margin: 0,
+        <h2 style={{
+          fontFamily: "'Inter', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 700, lineHeight: 1.15, maxWidth: 720, marginBottom: 48, letterSpacing: "-0.02em",
         }}>
-          <span style={{ color: C.accent, fontWeight: 700 }}>Three Seeds</span> puts its name on three things:
-          historicals that are accurate, outcomes we own, and an early warning before the numbers turn.
-        </p>
-        <div style={{ marginTop: 48, textAlign: "center" }}>
+          <span style={{ color: C.accent }}>Three Seeds</span> puts its name on three things.
+        </h2>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16 }}>
+          {[
+            {
+              num: "01",
+              title: "Accurate historicals.",
+              desc: "Books that close on time and reflect what actually happened. Numbers you can audit, build on, and put in front of a lender.",
+            },
+            {
+              num: "02",
+              title: "Outcomes we own.",
+              desc: "We're accountable for the financial result, not just the report. If something slips, we own the fix.",
+            },
+            {
+              num: "03",
+              title: "Early warning.",
+              desc: "We see trouble while there's still time to act. You know before the bank, the buyer, or the board does.",
+            },
+          ].map(({ num, title, desc }) => (
+            <div key={num} style={{
+              background: C.bgCard, border: `1px solid ${C.border}`,
+              padding: "36px 32px", borderRadius: 3, position: "relative",
+              display: "flex", flexDirection: "column",
+            }}>
+              <span style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 600,
+                color: C.accent, letterSpacing: "0.14em", display: "block", marginBottom: 20,
+              }}>{num}</span>
+              <h3 style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 22, fontWeight: 700,
+                color: C.dark, margin: "0 0 12px 0", letterSpacing: "-0.01em",
+              }}>{title}</h3>
+              <p style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 15, color: C.gray,
+                lineHeight: 1.7, margin: 0,
+              }}>{desc}</p>
+            </div>
+          ))}
+        </div>
+        <div style={{ marginTop: 56, textAlign: "center" }}>
           <Link to="/services" style={{
             color: C.accent, fontFamily: "'Inter', sans-serif", fontSize: 13,
             letterSpacing: "0.08em", textDecoration: "none", borderBottom: `1px solid ${C.accent}44`,
