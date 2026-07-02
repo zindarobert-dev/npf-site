@@ -30,29 +30,30 @@ export default function About() {
               fontFamily: "'Inter', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
               fontWeight: 700, lineHeight: 1.15, marginBottom: 24, letterSpacing: "-0.02em",
             }}>
-              Slow growth. Constant attention.
+              Grown to last. Watched close.
             </h2>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              The avocado isn't a logo. It's the first real food each of my daughters ate.
-              The first thing that nourished them outside their mother. My world is my girls,
-              and that's where the name starts: with the fruit that fed them before anything else.
+              The avocado isn't a logo. It's the first real food each of my daughters ate, the
+              first thing that nourished them outside their mother. My world is my girls, and
+              that's where the name starts: with the fruit that fed them before anything else.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              The <em>three</em> matters too. An avocado grows slowly. It needs time, attention,
-              and patience that most modern businesses don't want to give anything. And anyone
-              who's ever tried to grow one from a pit knows you don't plant one seed. You plant
-              three. Because nature is honest about backup plans. Some won't take. Some take longer
-              than you expected. And if one is tended well, it becomes something that outlives you.
+              An avocado grows on its own schedule, not yours. But nobody who's grown one from a
+              pit plants a single seed. You plant three. Not out of patience, out of honesty:
+              one outcome is never a plan. Some seeds won't take. Some take longer than you
+              budgeted for. And the one that's tended right becomes something that outlives the
+              person who planted it.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              That's how I think about the work. One plan isn't a plan. Real ownership means
-              scenarios: the primary case, the contingency when the season turns, and the
-              long-term track you're building toward whether you sell, succeed, or pass it on.
-              Three Seeds is named for the way that thinking shows up in everything we build
-              for clients.
+              That's the whole of how I work. One plan isn't a plan. Real ownership means three
+              in the ground at once: the case that holds when things go right, the contingency
+              for when the season turns, and the long-term track you're building toward whether
+              you sell it, keep running it, or hand it down. I don't leave you a forecast and walk
+              off. My name goes on the outcome. The season turns eventually, and my job is that
+              you see it coming and you're not standing there alone when it does.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 32, fontStyle: "italic" }}>
-              Slow growth. Constant attention. Three seeds in the ground, always.
+              Grown to last. Watched close. Three seeds in the ground, always.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Badge>U.S. Veteran</Badge>
