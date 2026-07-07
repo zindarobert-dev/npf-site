@@ -132,7 +132,7 @@ export default function About() {
           padding: "16px 40px", fontFamily: "'Inter', sans-serif",
           fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
           textTransform: "uppercase", borderRadius: 3, display: "inline-block",
-        }}>Talk to Bobby →</Link>
+        }}>Talk to Robert →</Link>
       </Section>
     </PageWrapper>
   );

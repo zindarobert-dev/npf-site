@@ -47,7 +47,7 @@ export default function Home() {
               fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
-            }}>Talk to Bobby →</Link>
+            }}>Talk to Robert →</Link>
             <Link to="/services" style={{
               background: "transparent", color: C.dark, border: `1px solid ${C.border}`,
               padding: "16px 36px", fontFamily: "'Inter', sans-serif", textDecoration: "none",

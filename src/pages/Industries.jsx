@@ -109,9 +109,9 @@ export default function Industries() {
               width: 40, height: 40, borderRadius: "50%", background: C.accent,
               display: "flex", alignItems: "center", justifyContent: "center",
               fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 700, color: "#fff",
-            }}>B</div>
+            }}>R</div>
             <div>
-              <div style={{ fontSize: 15, fontWeight: 600, color: C.dark }}>Bobby</div>
+              <div style={{ fontSize: 15, fontWeight: 600, color: C.dark }}>Robert</div>
               <div style={{ fontSize: 13, color: C.gray }}>Founder, Three Seeds</div>
             </div>
           </div>
@@ -132,7 +132,7 @@ export default function Industries() {
           padding: "16px 40px", fontFamily: "'Inter', sans-serif",
           fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
           textTransform: "uppercase", borderRadius: 3, display: "inline-block",
-        }}>Talk to Bobby →</Link>
+        }}>Talk to Robert →</Link>
       </Section>
     </PageWrapper>
   );

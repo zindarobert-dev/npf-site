@@ -27,7 +27,7 @@ export default function Contact() {
       if (!res.ok) throw new Error("Submission failed");
       setSubmitted(true);
     } catch {
-      setError("Something went wrong. Please email bobby directly or try again.");
+      setError("Something went wrong. Please email Robert directly or try again.");
     } finally {
       setSubmitting(false);
     }
@@ -78,7 +78,7 @@ export default function Contact() {
               }}>What happens next</h3>
               {[
                 "You fill out the form. Takes 60 seconds.",
-                "Bobby reviews your info and reaches out within 24 hours.",
+                "Robert reviews your info and reaches out within 24 hours.",
                 "We hop on a 30-minute call. No pitch, just problem-solving.",
                 "If it's a fit, we scope an engagement and start within two weeks.",
               ].map((step, i) => (
@@ -110,7 +110,7 @@ export default function Contact() {
                   color: C.dark, marginBottom: 12,
                 }}>Got it.</h3>
                 <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.65 }}>
-                  Bobby will be in touch within 24 hours.<br />
+                  Robert will be in touch within 24 hours.<br />
                   Looking forward to the conversation.
                 </p>
               </div>
