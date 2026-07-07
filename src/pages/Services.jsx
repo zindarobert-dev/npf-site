@@ -22,7 +22,7 @@ export default function Services() {
 
       {/* Cards */}
       <Section style={{ paddingTop: 0 }}>
-        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginBottom: 60 }}>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(300px, 1fr))", gap: 20, marginBottom: 20 }}>
           <ServiceCard tier="Tier 01" title="Bookkeeping & Compliance"
             description="Clean books, tax-ready records, and a foundation that won't crack under growth. The floor, not the ceiling."
             features={["Monthly reconciliation & close", "AP/AR management", "Payroll coordination", "Sales tax & compliance filings"]} />
@@ -32,6 +32,65 @@ export default function Services() {
           <ServiceCard tier="Tier 03" title="Part Time CFO"
             description="Strategic financial leadership. Capital allocation, lender relationships, growth planning. The judgment calls that move the needle."
             features={["Capital structure & debt strategy", "Scenario modeling & forecasting", "Board & lender reporting", "M&A and exit readiness"]} />
+        </div>
+
+        {/* Full-width one-time offer */}
+        <div style={{
+          background: C.bgCard, border: `1px solid ${C.border}`,
+          padding: "40px 40px", borderRadius: 3, marginBottom: 60,
+          position: "relative",
+        }}>
+          <div style={{
+            display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+            gap: 40, alignItems: "start",
+          }}>
+            {/* Left column: title + description */}
+            <div>
+              <span style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 11, fontWeight: 600,
+                color: C.accent, textTransform: "uppercase", letterSpacing: "0.18em",
+                marginBottom: 16, display: "inline-block",
+              }}>One-Time Engagement</span>
+              <h3 style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 28, fontWeight: 700,
+                color: C.dark, margin: "0 0 16px 0", letterSpacing: "-0.01em",
+              }}>Financial Discovery</h3>
+              <p style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 15, color: C.gray,
+                lineHeight: 1.7, margin: 0,
+              }}>
+                For owners who know something's off but aren't ready for a monthly commitment.
+                A single deep dive: we audit your books, your processes, and your financial
+                infrastructure, then hand you a written diagnostic and a clear plan for what
+                needs to change. No lock-in. No retainer.
+              </p>
+            </div>
+
+            {/* Right column: features + CTA */}
+            <div style={{ display: "flex", flexDirection: "column" }}>
+              <div style={{ display: "flex", flexDirection: "column", gap: 10, marginBottom: 28 }}>
+                {[
+                  "Complete audit of books and reconciliations",
+                  "Review of financial reporting and process gaps",
+                  "Cash flow visibility assessment",
+                  "Written diagnostic with prioritized action plan",
+                  "60-minute walkthrough of findings",
+                ].map((f, i) => (
+                  <div key={i} style={{ display: "flex", alignItems: "flex-start", gap: 10 }}>
+                    <span style={{ color: C.accent, fontSize: 14, marginTop: 2, flexShrink: 0 }}>→</span>
+                    <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 14, color: C.grayLight, lineHeight: 1.6 }}>{f}</span>
+                  </div>
+                ))}
+              </div>
+              <Link to="/contact" style={{
+                display: "inline-block", textAlign: "center", alignSelf: "flex-start",
+                background: C.accent, color: "#fff", textDecoration: "none",
+                padding: "14px 32px", fontFamily: "'Inter', sans-serif",
+                fontSize: 12, fontWeight: 700, letterSpacing: "0.12em",
+                textTransform: "uppercase", borderRadius: 2,
+              }}>Start Discovery →</Link>
+            </div>
+          </div>
         </div>
       </Section>
 
