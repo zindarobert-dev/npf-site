@@ -33,9 +33,9 @@ export default function About() {
               Grown to last. Watched close.
             </h2>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              The avocado isn't a logo. It's the first real food each of my daughters ate, the
-              first thing that nourished them outside their mother. My world is my girls, and
-              that's where the name starts: with the fruit that fed them before anything else.
+              The avocado isn't a logo. It's the first real food each of my daughters ate.
+              My world is my girls, and that's where the name starts: with the fruit that fed
+              them before anything else.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
               An avocado grows on its own schedule, not yours. But nobody who's grown one from a
