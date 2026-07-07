@@ -71,7 +71,7 @@ export default function Home() {
           <br /><span style={{ color: C.gray }}>Nobody's commanding the finances.</span>
         </h2>
         <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 48 }}>
-          Capital-intensive businesses don't fail from bad products.
+          Capital-intensive businesses don't fail from a lack of work.
           They fail from cash flow surprises, invisible cost creep,
           and decisions made without financial context.
         </p>
