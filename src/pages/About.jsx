@@ -63,27 +63,37 @@ export default function About() {
             </div>
           </div>
 
-          {/* Values card */}
-          <div style={{
-            background: C.bgCard, border: `1px solid ${C.border}`,
-            padding: "40px 32px", borderRadius: 3,
+          {/* Portrait */}
+          <figure style={{
+            margin: 0,
+            border: `1px solid ${C.border}`,
+            borderRadius: 3, overflow: "hidden",
+            background: C.bgCard,
           }}>
-            <h3 style={{
-              fontFamily: "'Inter', sans-serif", fontSize: 13,
-              color: C.accent, textTransform: "uppercase", letterSpacing: "0.15em", marginBottom: 32,
-            }}>Why Three Seeds</h3>
-            {[
-              { q: "Not another accountant", a: "We don't just record history. We build the financial infrastructure that helps you see what's coming." },
-              { q: "Capital-intensive expertise", a: "Equipment depreciation, seasonal cash flow, lender covenants. We speak your language because we live it." },
-              { q: "CFO judgment, controller cost", a: "High-level strategic thinking priced for businesses that can't justify a $300K salary, but desperately need the insight." },
-              { q: "Built to earn trust", a: "Veteran discipline. Endurance mindset. We show up, we grind, and we don't quit when it gets hard." },
-            ].map(({ q, a }, i) => (
-              <div key={i} style={{ marginBottom: i < 3 ? 28 : 0 }}>
-                <div style={{ fontSize: 16, fontWeight: 600, color: C.dark, marginBottom: 8 }}>{q}</div>
-                <div style={{ fontSize: 14, color: C.gray, lineHeight: 1.65 }}>{a}</div>
-              </div>
-            ))}
-          </div>
+            <img
+              src="/headshot.jpg"
+              alt="Robert Zinda, Founder of Three Seeds"
+              style={{
+                display: "block", width: "100%", height: "auto",
+                aspectRatio: "2 / 3", objectFit: "cover",
+              }}
+            />
+            <figcaption style={{
+              padding: "20px 24px",
+              borderTop: `1px solid ${C.border}`,
+              background: C.bgCard,
+            }}>
+              <div style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 11,
+                color: C.accent, textTransform: "uppercase", letterSpacing: "0.15em",
+                marginBottom: 6, fontWeight: 600,
+              }}>Founder</div>
+              <div style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 18, fontWeight: 700,
+                color: C.dark, letterSpacing: "-0.005em",
+              }}>Robert Zinda</div>
+            </figcaption>
+          </figure>
         </div>
       </Section>
 
