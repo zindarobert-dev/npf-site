@@ -29,9 +29,9 @@ const industries = [
     needs: "Reliable fixed-asset register, capital allocation modeling, and scenario planning for price volatility.",
   },
   {
-    name: "Financial Services",
-    challenges: "Regulatory reporting, separation of custodial and operating cash, revenue timing across advisory fees and commissions, and heavy compliance overhead.",
-    needs: "Audit-ready books, revenue recognition rules that hold up under scrutiny, and reporting infrastructure built for regulators.",
+    name: "Lending & Consumer Finance",
+    challenges: "Loan loss reserves, portfolio delinquency and charge-off reporting, interest and fee income recognition across BNPL, lease-to-own, and installment loan products, plus heavy state and federal compliance overhead.",
+    needs: "Reserves and portfolio metrics that hold up to a lender review, revenue recognition that survives an audit, and reporting infrastructure built for regulators, warehouse partners, and investors.",
   },
 ];
 
@@ -53,7 +53,7 @@ export default function Industries() {
           The lessons carry.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 0 }}>
-          {["SaaS", "Wellness", "Agriculture", "Travel", "Oil & Gas", "Financial Services"
+          {["SaaS", "Wellness", "Agriculture", "Travel", "Oil & Gas", "Lending & BNPL"
           ].map(ind => <IndustryTag key={ind} label={ind} />)}
         </div>
       </Section>
