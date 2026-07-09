@@ -57,7 +57,7 @@ export default function Home() {
           </div>
 
           <div className="fade-up-d4" style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-            <Badge>Financial · Advisory · Tax</Badge>
+            <Badge>CFO Advisory · Tax</Badge>
           </div>
 
         </div>
