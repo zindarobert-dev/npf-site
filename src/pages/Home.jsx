@@ -39,14 +39,17 @@ export default function Home() {
           }}>
             Books you can trust, forecasts that hold, and the judgment to know what's coming.
           </p>
-          <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 80 }}>
-            <Link to="/contact" style={{
-              background: C.accent, color: "#fff", border: "none", textDecoration: "none",
-              padding: "16px 36px", fontFamily: "'Inter', sans-serif",
-              fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
-              textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
-              display: "inline-block",
-            }}>Talk to Robert →</Link>
+          <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start", marginBottom: 80 }}>
+            <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "flex-start" }}>
+              <Link to="/contact" style={{
+                background: C.accent, color: "#fff", border: "none", textDecoration: "none",
+                padding: "16px 36px", fontFamily: "'Inter', sans-serif",
+                fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
+                textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
+                display: "inline-block",
+              }}>Talk to Robert →</Link>
+              <Badge>CFO Advisory · Tax</Badge>
+            </div>
             <Link to="/services" style={{
               background: "transparent", color: C.dark, border: `1px solid ${C.border}`,
               padding: "16px 36px", fontFamily: "'Inter', sans-serif", textDecoration: "none",
@@ -54,10 +57,6 @@ export default function Home() {
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
             }}>See Services</Link>
-          </div>
-
-          <div className="fade-up-d4" style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
-            <Badge>CFO Advisory · Tax</Badge>
           </div>
 
         </div>
