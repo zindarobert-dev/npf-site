@@ -23,7 +23,7 @@ export default function Home() {
         }} />
 
         <div style={{ maxWidth: 1200, margin: "0 auto", position: "relative", zIndex: 1, width: "100%" }}>
-          <div className="fade-up"><Badge>Veteran-Owned · Part Time CFO</Badge></div>
+          <div className="fade-up"><Badge>Veteran-Owned</Badge></div>
           <h1 className="fade-up-d1" style={{
             fontFamily: "'Inter', sans-serif",
             fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 700, lineHeight: 1.05,
@@ -55,6 +55,10 @@ export default function Home() {
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
             }}>See Services</Link>
+          </div>
+
+          <div className="fade-up-d4" style={{ display: "flex", gap: 10, flexWrap: "wrap" }}>
+            <Badge>Financial · Advisory · Tax</Badge>
           </div>
 
         </div>
