@@ -31,14 +31,14 @@ export default function Home() {
           }}>
             Financial Command<br />
             <span style={{ color: C.accent }}>Systems</span> for<br />
-            Operators Under Pressure
+            Growing Businesses.
           </h1>
           <p className="fade-up-d2" style={{
             fontSize: "clamp(16px, 1.8vw, 20px)", color: C.gray, lineHeight: 1.7,
             maxWidth: 580, margin: "0 0 44px 0", fontWeight: 300,
           }}>
-            CFO-level financial infrastructure for capital-intensive businesses
-            doing $1M–$20M in revenue.
+            CFO-level financial infrastructure for owner-operated businesses.
+            Books you can trust, forecasts that hold, and the judgment to know what's coming.
           </p>
           <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 80 }}>
             <Link to="/contact" style={{
@@ -71,14 +71,14 @@ export default function Home() {
           <br /><span style={{ color: C.gray }}>Nobody's commanding the finances.</span>
         </h2>
         <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 48 }}>
-          Capital-intensive businesses don't fail from a lack of work.
+          Businesses don't fail from a lack of work.
           They fail from cash flow surprises, invisible cost creep,
           and decisions made without financial context.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 12 }}>
           <PainCard number="01" text="You can't tell if you'll make payroll in 60 days without pulling up three spreadsheets and guessing." />
-          <PainCard number="02" text="Your equipment fleet is depreciating and you don't know which assets are earning their keep." />
-          <PainCard number="03" text="Seasonality wrecks your cash flow every year, and every year you're surprised by it." />
+          <PainCard number="02" text="Your books close weeks after month-end, so every decision gets made on numbers that are already stale." />
+          <PainCard number="03" text="Margins are shrinking and nobody can tell you exactly where the cost creep is coming from." />
           <PainCard number="04" text="You're making $8M in revenue but can't explain to your banker why you need a bigger line of credit." />
         </div>
       </Section>
