@@ -4,34 +4,34 @@ import { IndustryTag, SectionLabel, PageWrapper, Section } from "../components/U
 
 const industries = [
   {
-    name: "Construction",
-    challenges: "Retainage, progress billing, seasonal labor costs, bonding requirements, job costing across multiple active projects.",
-    needs: "Cash flow forecasting that accounts for retainage release schedules and seasonal revenue dips.",
+    name: "SaaS & Subscription Platforms",
+    challenges: "Deferred revenue recognition, subscription and plan complexity, contractor payouts across a distributed team, forecasting ARR/MRR growth.",
+    needs: "Automated revenue recognition, subscription cohort forecasting, cash runway modeling, and unit-economics visibility.",
   },
   {
-    name: "Oil & Gas",
-    challenges: "Commodity price volatility, high equipment costs, complex joint venture accounting, regulatory compliance.",
-    needs: "Capital allocation strategy and scenario modeling for price fluctuation impacts.",
+    name: "Wellness & Services",
+    challenges: "Multiple revenue streams (recurring, one-time, group vs. individual), practitioner and contractor payments, seasonal demand swings.",
+    needs: "Clean cost accounting by service line, contractor payout automation, and cash flow visibility that reflects how the business actually earns.",
   },
   {
     name: "Agriculture",
-    challenges: "Extreme seasonality, weather-dependent revenue, input cost volatility, equipment depreciation cycles.",
-    needs: "Annual cash flow modeling that bridges harvest-to-harvest and manages input cost timing.",
+    challenges: "Seasonal cash flow, weather-dependent revenue, input cost timing (seed, feed, fertilizer), equipment depreciation, and thin margins.",
+    needs: "Multi-season cash flow modeling, input cost planning, and equipment replacement capital strategy.",
   },
   {
-    name: "Manufacturing",
-    challenges: "Inventory management, cost of goods complexity, equipment maintenance reserves, workforce scaling.",
-    needs: "Margin analysis by product line and capital expenditure planning for equipment replacement.",
+    name: "Travel & Hospitality",
+    challenges: "Seasonal revenue swings, advance-booking timing gaps, refund and cancellation exposure, complex payment processing.",
+    needs: "Booking-to-service cash flow modeling, refund reserve strategy, and seasonal payroll planning.",
   },
   {
-    name: "Logistics & Trucking",
-    challenges: "Fuel cost volatility, fleet depreciation, driver payroll complexity, per-mile profitability tracking.",
-    needs: "Per-unit economics visibility and fleet replacement capital planning.",
+    name: "Oil & Gas",
+    challenges: "Commodity price volatility, high fixed-asset intensity, joint-venture accounting, and complex depreciation schedules that flow into both financials and tax.",
+    needs: "Reliable fixed-asset register, capital allocation modeling, and scenario planning for price volatility.",
   },
   {
-    name: "Equipment Rental",
-    challenges: "Asset utilization tracking, depreciation schedules, maintenance reserves, seasonal demand swings.",
-    needs: "Asset-level P&L visibility and rental rate optimization against depreciation.",
+    name: "Financial Services",
+    challenges: "Regulatory reporting, separation of custodial and operating cash, revenue timing across advisory fees and commissions, and heavy compliance overhead.",
+    needs: "Audit-ready books, revenue recognition rules that hold up under scrutiny, and reporting infrastructure built for regulators.",
   },
 ];
 
@@ -45,15 +45,15 @@ export default function Industries() {
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
           fontWeight: 700, lineHeight: 1.08, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.03em",
         }}>
-          Built for businesses that<br /><span style={{ color: C.accent }}>move heavy things.</span>
+          Different industries.<br /><span style={{ color: C.accent }}>Same discipline.</span>
         </h1>
-        <p style={{ fontSize: 18, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 32, fontWeight: 300 }}>
-          We serve capital-intensive operators: businesses where cash flow is seasonal,
-          equipment depreciates, and a wrong financial call costs real money.
+        <p style={{ fontSize: 18, color: C.gray, lineHeight: 1.7, maxWidth: 580, marginBottom: 32, fontWeight: 300 }}>
+          Every business is different, but the financial questions rhyme.
+          I've built financial systems across a range of industries.
+          The lessons carry.
         </p>
         <div style={{ display: "flex", flexWrap: "wrap", gap: 10, marginBottom: 0 }}>
-          {["Construction", "Oil & Gas", "Agriculture", "Manufacturing", "Logistics & Trucking",
-            "Equipment Rental", "Heavy Civil", "Excavation & Earthwork", "HVAC & Mechanical",
+          {["SaaS", "Wellness", "Agriculture", "Travel", "Oil & Gas", "Financial Services"
           ].map(ind => <IndustryTag key={ind} label={ind} />)}
         </div>
       </Section>
@@ -64,7 +64,7 @@ export default function Industries() {
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(24px, 3.5vw, 36px)",
           fontWeight: 700, lineHeight: 1.15, marginBottom: 48, letterSpacing: "-0.02em",
         }}>
-          We know your world
+          Industries I've served
         </h2>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(340px, 1fr))", gap: 20 }}>
           {industries.map(({ name, challenges, needs }) => (
@@ -125,7 +125,7 @@ export default function Industries() {
           fontWeight: 700, marginBottom: 16, letterSpacing: "-0.02em",
         }}>See yourself here?</h2>
         <p style={{ fontSize: 16, color: C.gray, marginBottom: 32, maxWidth: 440, margin: "0 auto 32px" }}>
-          Let's talk about how Financial Command Systems work for your specific industry.
+          Yours might be different. The questions won't be. Let's talk about how Financial Command Systems work for you.
         </p>
         <Link to="/contact" style={{
           background: C.accent, color: "#fff", textDecoration: "none",
