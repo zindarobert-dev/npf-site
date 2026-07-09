@@ -37,7 +37,6 @@ export default function Home() {
             fontSize: "clamp(16px, 1.8vw, 20px)", color: C.gray, lineHeight: 1.7,
             maxWidth: 580, margin: "0 0 44px 0", fontWeight: 300,
           }}>
-            CFO-level financial infrastructure for owner-operated businesses.
             Books you can trust, forecasts that hold, and the judgment to know what's coming.
           </p>
           <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", marginBottom: 80 }}>
