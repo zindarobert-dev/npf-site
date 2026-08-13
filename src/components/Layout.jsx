@@ -46,7 +46,7 @@ export default function Layout({ children }) {
         }}>
           {/* Logo */}
           <Link to="/" style={{ display: "flex", alignItems: "center", textDecoration: "none" }}>
-            <img src="/logo.png" alt="Three Seeds" style={{
+            <img src="/logo.webp" alt="Three Seeds" style={{
               height: 70, width: "auto", objectFit: "contain",
             }} />
           </Link>
@@ -126,7 +126,7 @@ export default function Layout({ children }) {
           flexWrap: "wrap", gap: 20,
         }}>
           <div style={{ display: "flex", alignItems: "center", gap: 12 }}>
-            <img src="/logo.png" alt="Three Seeds" style={{ height: 40, width: "auto", objectFit: "contain" }} />
+            <img src="/logo.webp" alt="Three Seeds" style={{ height: 40, width: "auto", objectFit: "contain" }} />
             <span style={{ fontFamily: "'Inter', sans-serif", fontSize: 12, color: C.gray }}>
               © 2026 Three Seeds LLC. All rights reserved.
             </span>
