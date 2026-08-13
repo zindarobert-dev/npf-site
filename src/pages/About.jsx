@@ -33,27 +33,34 @@ export default function About() {
               Grown to last. Watched close.
             </h2>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              The avocado isn't a logo. It's the first real food each of my daughters ate.
-              My world is my girls, and that's where the name starts: with the fruit that fed
-              them before anything else.
+              The avocado isn't a logo. It's the fruit my daughters love, and my girls are my
+              whole world. That's where the name starts.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              An avocado grows on its own schedule, not yours. But nobody who's grown one from a
-              pit plants a single seed. You plant three. Not out of patience, out of honesty:
-              one outcome is never a plan. Some seeds won't take. Some take longer than you
-              budgeted for. And the one that's tended right becomes something that outlives the
-              person who planted it.
+              An avocado grows on its own schedule, not yours. And nobody serious about it
+              plants a single seed. You plant several. You already know that, because you
+              didn't build one business. You built a few, plus the property, plus whatever you
+              started on the side. Some took fast. Some took longer than you budgeted for. Some
+              didn't take at all. That isn't recklessness. It's what real ownership looks like:
+              more than one thing in the ground, none of them on the same clock, and the one
+              that's tended right becomes something that outlives the person who planted it.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
-              That's the whole of how I work. One plan isn't a plan. Real ownership means three
-              in the ground at once: the case that holds when things go right, the contingency
-              for when the season turns, and the long-term track you're building toward whether
-              you sell it, keep running it, or hand it down. I don't leave you a forecast and walk
-              off. My name goes on the outcome. The season turns eventually, and my job is that
-              you see it coming and you're not standing there alone when it does.
+              A grove that size needs one person watching all of it. That's the seat I take.
+              The books clean, the tax deliberate, the entities pointed the same direction, and
+              the right specialist pulled in when the moment calls for a lawyer or a banker
+              instead of an accountant. Not another advisor watching one slice. The one who
+              sees the whole thing. You keep running the businesses. I own the numbers across
+              all of them.
+            </p>
+            <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 20 }}>
+              I don't hand you a forecast and walk off. My name goes on the outcome. Each of
+              these is on its own schedule, and every season turns eventually. My job is that
+              you see it coming, on all of them, and you're not standing there alone when it
+              does.
             </p>
             <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, marginBottom: 32, fontStyle: "italic" }}>
-              Grown to last. Watched close. Three seeds in the ground, always.
+              Grown to last. Watched close.
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Badge>U.S. Veteran</Badge>
