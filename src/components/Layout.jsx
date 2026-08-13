@@ -52,8 +52,8 @@ export default function Layout({ children }) {
           </Link>
 
           {/* Desktop links */}
-          <div style={{ display: "flex", alignItems: "center", gap: 32 }}>
-            <div className="nav-desktop" style={{ display: "flex", gap: 28 }}>
+          <div className="nav-desktop-wrap" style={{ display: "flex", alignItems: "center", gap: 32 }}>
+            <div style={{ display: "flex", gap: 28 }}>
               {navLinks.map(({ label, to }) => (
                 <Link key={to} to={to} style={{
                   textDecoration: "none",
@@ -111,6 +111,13 @@ export default function Layout({ children }) {
                 color: isActive(to) ? C.accent : C.dark,
               }}>{label}</Link>
             ))}
+            <Link to="/contact" onClick={() => setMenuOpen(false)} style={{
+              background: C.accent, color: "#fff", textDecoration: "none",
+              padding: "12px 20px", fontFamily: "'Inter', sans-serif",
+              fontSize: 12, fontWeight: 700, letterSpacing: "0.08em",
+              textTransform: "uppercase", borderRadius: 3, textAlign: "center",
+              marginTop: 8,
+            }}>Get Started</Link>
           </div>
         )}
       </nav>
@@ -147,7 +154,7 @@ export default function Layout({ children }) {
 
       <style>{`
         @media (max-width: 768px) {
-          .nav-desktop { display: none !important; }
+          .nav-desktop-wrap { display: none !important; }
           .nav-mobile-toggle { display: block !important; }
         }
       `}</style>
