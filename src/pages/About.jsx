@@ -57,7 +57,7 @@ export default function About() {
             </p>
             <div style={{ display: "flex", gap: 12, flexWrap: "wrap" }}>
               <Badge>U.S. Veteran</Badge>
-              <Badge>Endurance Athlete</Badge>
+              <Badge>3x Dad</Badge>
               <Badge>100-Mile Finisher</Badge>
               <Badge>Half Ironman</Badge>
             </div>
