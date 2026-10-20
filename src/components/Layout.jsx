@@ -138,8 +138,8 @@ export default function Layout({ children }) {
               © 2026 Three Seeds LLC. All rights reserved.
             </span>
           </div>
-          <div style={{ display: "flex", gap: 24 }}>
-            {navLinks.map(({ label, to }) => (
+          <div style={{ display: "flex", gap: 24, flexWrap: "wrap" }}>
+            {[...navLinks, { label: "Privacy", to: "/legal/privacy" }, { label: "Terms", to: "/legal/eula" }].map(({ label, to }) => (
               <Link key={to} to={to} style={{
                 fontFamily: "'Inter', sans-serif", fontSize: 11, color: C.gray,
                 textDecoration: "none", letterSpacing: "0.05em",
