@@ -13,23 +13,27 @@ import Eula from "./pages/Eula";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
 
+// Kept as a raw string and injected with dangerouslySetInnerHTML. React's
+// server renderer escapes text children, so the apostrophes in font-family
+// would come back as &#x27; on the server while the browser parses <style>
+// as raw text, breaking hydration on every page.
+const GLOBAL_CSS = `
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  html { scroll-behavior: smooth; }
+  body { background: ${C.bg}; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
+  ::selection { background: ${C.accent}; color: #fff; }
+  a { transition: color 0.2s, opacity 0.2s; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
+  .fade-up { animation: fadeUp 0.8s ease forwards; }
+  .fade-up-d1 { animation: fadeUp 0.8s ease 0.1s forwards; opacity: 0; }
+  .fade-up-d2 { animation: fadeUp 0.8s ease 0.2s forwards; opacity: 0; }
+  .fade-up-d3 { animation: fadeUp 0.8s ease 0.3s forwards; opacity: 0; }
+  .fade-up-d4 { animation: fadeUp 0.8s ease 0.4s forwards; opacity: 0; }
+  input:focus, textarea:focus { outline: none; border-color: ${C.accent} !important; }
+`;
+
 function GlobalStyles() {
-  return (
-    <style>{`
-      *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-      html { scroll-behavior: smooth; }
-      body { background: ${C.bg}; font-family: 'Inter', sans-serif; -webkit-font-smoothing: antialiased; }
-      ::selection { background: ${C.accent}; color: #fff; }
-      a { transition: color 0.2s, opacity 0.2s; }
-      @keyframes fadeUp { from { opacity: 0; transform: translateY(30px); } to { opacity: 1; transform: translateY(0); } }
-      .fade-up { animation: fadeUp 0.8s ease forwards; }
-      .fade-up-d1 { animation: fadeUp 0.8s ease 0.1s forwards; opacity: 0; }
-      .fade-up-d2 { animation: fadeUp 0.8s ease 0.2s forwards; opacity: 0; }
-      .fade-up-d3 { animation: fadeUp 0.8s ease 0.3s forwards; opacity: 0; }
-      .fade-up-d4 { animation: fadeUp 0.8s ease 0.4s forwards; opacity: 0; }
-      input:focus, textarea:focus { outline: none; border-color: ${C.accent} !important; }
-    `}</style>
-  );
+  return <style dangerouslySetInnerHTML={{ __html: GLOBAL_CSS }} />;
 }
 
 export default function App() {
