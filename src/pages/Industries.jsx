@@ -89,35 +89,6 @@ export default function Industries() {
         </div>
       </Section>
 
-      {/* Quote */}
-      <Section style={{ borderTop: `1px solid ${C.border}` }}>
-        <div style={{
-          padding: "40px 44px", background: C.bgCard,
-          border: `1px solid ${C.border}`, borderLeft: `3px solid ${C.accent}`,
-          borderRadius: 3, maxWidth: 750,
-        }}>
-          <p style={{
-            fontFamily: "'Inter', sans-serif", fontSize: 20, fontWeight: 500,
-            color: C.dark, lineHeight: 1.7, margin: 0, fontStyle: "italic",
-          }}>
-            "AI can automate your bookkeeping. It can't sit across from your banker
-            and explain why your cash position is seasonal, not structural.
-            That's what we do."
-          </p>
-          <div style={{ marginTop: 24, display: "flex", alignItems: "center", gap: 12 }}>
-            <div style={{
-              width: 40, height: 40, borderRadius: "50%", background: C.accent,
-              display: "flex", alignItems: "center", justifyContent: "center",
-              fontFamily: "'Inter', sans-serif", fontSize: 14, fontWeight: 700, color: "#fff",
-            }}>R</div>
-            <div>
-              <div style={{ fontSize: 15, fontWeight: 600, color: C.dark }}>Robert</div>
-              <div style={{ fontSize: 13, color: C.gray }}>Founder, Three Seeds</div>
-            </div>
-          </div>
-        </div>
-      </Section>
-
       {/* CTA */}
       <Section style={{ borderTop: `1px solid ${C.border}`, textAlign: "center" }}>
         <h2 style={{
