@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { FONT_LINK, C } from "./theme";
+import { Routes, Route } from "react-router-dom";
+import { C } from "./theme";
 import Layout from "./components/Layout";
+import Seo from "./components/Seo";
 import Home from "./pages/Home";
 import Services from "./pages/Services";
 import Industries from "./pages/Industries";
@@ -33,19 +33,10 @@ function GlobalStyles() {
 }
 
 export default function App() {
-  useEffect(() => {
-    if (!document.querySelector("#three-seeds-fonts")) {
-      const link = document.createElement("link");
-      link.id = "three-seeds-fonts";
-      link.rel = "stylesheet";
-      link.href = FONT_LINK;
-      document.head.appendChild(link);
-    }
-  }, []);
-
   return (
-    <BrowserRouter>
+    <>
       <GlobalStyles />
+      <Seo />
       <Layout>
         <Routes>
           <Route path="/" element={<Home />} />
@@ -60,6 +51,6 @@ export default function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Layout>
-    </BrowserRouter>
+    </>
   );
 }

@@ -59,6 +59,7 @@ export default function Contact() {
                 { icon: "◆", text: "Free 30-minute discovery call" },
                 { icon: "◆", text: "No contracts. Month-to-month." },
                 { icon: "◆", text: "Onboarding in under 2 weeks" },
+                { icon: "◆", text: "Nationwide. Fully remote." },
               ].map(({ icon, text }, i) => (
                 <div key={i} style={{ display: "flex", alignItems: "center", gap: 14 }}>
                   <span style={{ color: C.accent, fontSize: 14 }}>{icon}</span>

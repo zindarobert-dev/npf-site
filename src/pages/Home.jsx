@@ -29,15 +29,17 @@ export default function Home() {
             fontSize: "clamp(40px, 6vw, 80px)", fontWeight: 700, lineHeight: 1.05,
             margin: "28px 0", maxWidth: 900, letterSpacing: "-0.03em", color: C.dark,
           }}>
-            Financial Command<br />
-            <span style={{ color: C.accent }}>Systems</span> for<br />
-            Growing Businesses.
+            Your revenue isn't<br />
+            the problem.<br />
+            <span style={{ color: C.accent }}>Cash flow timing is.</span>
           </h1>
           <p className="fade-up-d2" style={{
             fontSize: "clamp(16px, 1.8vw, 20px)", color: C.gray, lineHeight: 1.7,
             maxWidth: 580, margin: "0 0 44px 0", fontWeight: 300,
           }}>
-            Books you can trust, forecasts that hold, and the judgment to know what's coming.
+            Part Time CFO, controller, and bookkeeping for businesses where money goes out
+            long before it comes back in. We help you see the crunch before it lands.
+            Nationwide, fully remote.
           </p>
           <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start", marginBottom: 80 }}>
             <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "flex-start" }}>
@@ -69,25 +71,79 @@ export default function Home() {
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
           fontWeight: 700, lineHeight: 1.15, maxWidth: 650, marginBottom: 20, letterSpacing: "-0.02em",
         }}>
-          Your bookkeeper keeps the books.
-          <br /><span style={{ color: C.gray }}>Nobody's commanding the finances.</span>
+          Your books are fine.
+          <br /><span style={{ color: C.gray }}>Your cash timing isn't.</span>
         </h2>
         <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 48 }}>
-          Businesses don't fail from a lack of work.
-          They fail from cash flow surprises, invisible cost creep,
-          and decisions made without financial context.
+          Profitable businesses run short of cash all the time. Not because the work dried
+          up, but because the money leaves months before it comes back. Revenue is healthy.
+          The calendar is the problem.
         </p>
         <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 12 }}>
-          <PainCard number="01" text="You can't tell if you'll make payroll in 60 days without pulling up three spreadsheets and guessing." />
-          <PainCard number="02" text="Your books close weeks after month-end, so every decision gets made on numbers that are already stale." />
-          <PainCard number="03" text="Margins are shrinking and nobody can tell you exactly where the cost creep is coming from." />
-          <PainCard number="04" text="You're making $8M in revenue but can't explain to your banker why you need a bigger line of credit." />
+          <PainCard number="01" text="You billed the draw six weeks ago, retainage is still held back, and payroll for the next phase is due Friday." />
+          <PainCard number="02" text="You can't tell if you'll make payroll in 60 days without pulling up three spreadsheets and guessing." />
+          <PainCard number="03" text="Your books close weeks after month-end, so every decision gets made on numbers that are already stale." />
+          <PainCard number="04" text="You can't explain to your banker why the line of credit has to be bigger, or when you'll pay it back down." />
+        </div>
+      </Section>
+
+      {/* ═══ WHO THIS IS FOR ═══ */}
+      <Section style={{ borderTop: `1px solid ${C.border}` }}>
+        <SectionLabel label="Who This Is For" number="02" />
+        <h2 style={{
+          fontFamily: "'Inter', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
+          fontWeight: 700, lineHeight: 1.15, maxWidth: 720, marginBottom: 20, letterSpacing: "-0.02em",
+        }}>
+          Three ways cash gets <span style={{ color: C.accent }}>stuck</span>.
+        </h2>
+        <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 48 }}>
+          We work with owner-led businesses between $1M and $5M in revenue, nationwide and
+          fully remote. The pattern is always the same: the money is real, it just arrives
+          late.
+        </p>
+        <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(280px, 1fr))", gap: 16 }}>
+          {[
+            {
+              num: "01",
+              title: "Contractors and trades.",
+              desc: "Progress billing, retainage held back for months, materials and payroll paid long before the draw lands. We forecast job by job, so you know which weeks are tight and which jobs are actually making money.",
+            },
+            {
+              num: "02",
+              title: "Seasonal businesses.",
+              desc: "Cash and staff go out ahead of the busy season, then the lean stretch has to be carried. We time the line of credit and owner draws to the calendar instead of to the panic.",
+            },
+            {
+              num: "03",
+              title: "Inventory and distribution.",
+              desc: "Cash sits in the warehouse. Suppliers want paying on their terms, customers pay on theirs, and you fund the gap in between. We model the whole cycle so the gap stops being a surprise.",
+            },
+          ].map(({ num, title, desc }) => (
+            <div key={num} style={{
+              background: C.bgCard, border: `1px solid ${C.border}`,
+              padding: "36px 32px", borderRadius: 3, position: "relative",
+              display: "flex", flexDirection: "column",
+            }}>
+              <span style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 13, fontWeight: 600,
+                color: C.accent, letterSpacing: "0.14em", display: "block", marginBottom: 20,
+              }}>{num}</span>
+              <h3 style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 22, fontWeight: 700,
+                color: C.dark, margin: "0 0 12px 0", letterSpacing: "-0.01em",
+              }}>{title}</h3>
+              <p style={{
+                fontFamily: "'Inter', sans-serif", fontSize: 15, color: C.gray,
+                lineHeight: 1.7, margin: 0,
+              }}>{desc}</p>
+            </div>
+          ))}
         </div>
       </Section>
 
       {/* ═══ THE THREE SEEDS ═══ */}
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
-        <SectionLabel label="The Three Seeds" number="02" />
+        <SectionLabel label="The Three Seeds" number="03" />
         <h2 style={{
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(28px, 4vw, 44px)",
           fontWeight: 700, lineHeight: 1.15, maxWidth: 720, marginBottom: 48, letterSpacing: "-0.02em",

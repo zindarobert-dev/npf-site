@@ -62,7 +62,7 @@ export default function CaseStudies() {
           fontFamily: "'Inter', sans-serif", fontSize: 20, color: C.gray,
           lineHeight: 1.6, maxWidth: 560, marginBottom: 0, fontWeight: 300, fontStyle: "italic",
         }}>
-          Stewardship, controlled growth.
+          Real engagements. The systems we built, and what changed.
         </p>
       </Section>
 

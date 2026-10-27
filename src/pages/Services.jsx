@@ -12,11 +12,12 @@ export default function Services() {
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
           fontWeight: 700, lineHeight: 1.08, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.03em",
         }}>
-          Three tiers.<br /><span style={{ color: C.accent }}>One command system.</span>
+          Three tiers.<br /><span style={{ color: C.accent }}>One cash flow system.</span>
         </h1>
         <p style={{ fontSize: 18, color: C.gray, lineHeight: 1.7, maxWidth: 560, marginBottom: 0, fontWeight: 300 }}>
-          Start where you are. Scale when you're ready. Every tier builds
-          toward full financial command. CFO judgment at a controller's cost.
+          Start where you are. Scale when you're ready. Every tier builds toward the same
+          thing: a Financial Command System that shows you where the cash goes before it
+          goes. Nationwide, fully remote.
         </p>
       </Section>
 
@@ -27,10 +28,10 @@ export default function Services() {
             description="Clean books, tax-ready records, and a foundation that won't crack under growth. The floor, not the ceiling."
             features={["Monthly reconciliation & close", "AP/AR management", "Payroll coordination", "Sales tax & compliance filings"]} />
           <ServiceCard tier="Tier 02" title="Controller Services" isHighlight
-            description="Financial oversight that catches problems before they become crises. Budgets, variance analysis, and audit-ready reporting."
+            description="Oversight that catches the squeeze while there is still time to act. Cash flow forecasting, budget variance, and reporting a lender will accept."
             features={["Budget vs. actual reporting", "Cash flow forecasting", "Financial process design", "Audit preparation & support"]} />
           <ServiceCard tier="Tier 03" title="Part Time CFO"
-            description="Strategic financial leadership. Capital allocation, lender relationships, growth planning. The judgment calls that move the needle."
+            description="Strategic financial leadership. Capital structure, lender relationships, and the judgment calls that decide whether a tight quarter is survivable."
             features={["Capital structure & debt strategy", "Scenario modeling & forecasting", "Board & lender reporting", "M&A and exit readiness"]} />
         </div>
 
@@ -60,8 +61,8 @@ export default function Services() {
                 lineHeight: 1.7, margin: 0,
               }}>
                 For owners who know something's off but aren't ready for a monthly commitment.
-                A single deep dive: we audit your books, your processes, and your financial
-                infrastructure, then hand you a written diagnostic and a clear plan for what
+                A single deep dive: we audit your books, your processes, and where your cash
+                actually goes, then hand you a written diagnostic and a clear plan for what
                 needs to change. No lock-in. No retainer.
               </p>
             </div>
@@ -134,7 +135,8 @@ export default function Services() {
           fontWeight: 700, marginBottom: 16, letterSpacing: "-0.02em",
         }}>Ready to take command?</h2>
         <p style={{ fontSize: 16, color: C.gray, marginBottom: 32, maxWidth: 440, margin: "0 auto 32px" }}>
-          No contracts. Month-to-month. Start with a free discovery call.
+          No contracts. Month-to-month. Nationwide and fully remote.
+          Start with a free discovery call.
         </p>
         <Link to="/contact" style={{
           background: C.accent, color: "#fff", textDecoration: "none",
