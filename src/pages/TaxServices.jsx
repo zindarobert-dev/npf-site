@@ -201,9 +201,15 @@ export default function TaxServices() {
               the return does the planning and sees the cash forecast, which is the point:
               a tax decision made without the cash picture is a guess.
             </p>
-            <p style={{ ...lede, fontSize: 16, marginBottom: 0 }}>
+            <p style={{ ...lede, fontSize: 16, marginBottom: 16 }}>
               He writes <a href="https://cashgap.substack.com" style={inlineLink} rel="noopener">The
               Cash Gap</a>, on the distance between profit on paper and money in the account.
+            </p>
+            <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.8, margin: 0 }}>
+              Find him on{" "}
+              <a href="https://www.linkedin.com/in/robert-zinda-2916457a/" style={inlineLink} rel="noopener" target="_blank">LinkedIn</a>,
+              or read more on the{" "}
+              <Link to="/about" style={inlineLink}>about page</Link>.
             </p>
           </div>
         </div>

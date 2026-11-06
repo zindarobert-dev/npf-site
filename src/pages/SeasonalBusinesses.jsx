@@ -214,10 +214,10 @@ export default function SeasonalBusinesses() {
               He writes <a href="https://cashgap.substack.com" style={inlineLink} rel="noopener">The
               Cash Gap</a>, on the distance between profit on paper and money in the account.
             </p>
-            {/* [BOBBY: send me your LinkedIn URL and I'll add it here and to the Person
-                JSON-LD sameAs array. Not linked yet because I don't have the URL.] */}
             <p style={{ fontSize: 15, color: C.gray, lineHeight: 1.8, margin: 0 }}>
-              More on the practice on the{" "}
+              Find him on{" "}
+              <a href="https://www.linkedin.com/in/robert-zinda-2916457a/" style={inlineLink} rel="noopener" target="_blank">LinkedIn</a>,
+              or read more on the{" "}
               <Link to="/about" style={inlineLink}>about page</Link>.
             </p>
           </div>

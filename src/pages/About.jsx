@@ -99,6 +99,17 @@ export default function About() {
                 fontFamily: "'Inter', sans-serif", fontSize: 18, fontWeight: 700,
                 color: C.dark, letterSpacing: "-0.005em",
               }}>Robert Zinda</div>
+              <a
+                href="https://www.linkedin.com/in/robert-zinda-2916457a/"
+                rel="noopener"
+                target="_blank"
+                style={{
+                  display: "inline-block", marginTop: 10,
+                  fontFamily: "'Inter', sans-serif", fontSize: 12,
+                  color: C.accent, textDecoration: "none",
+                  borderBottom: `1px solid ${C.accent}44`, paddingBottom: 1,
+                }}
+              >LinkedIn →</a>
             </figcaption>
           </figure>
         </div>
