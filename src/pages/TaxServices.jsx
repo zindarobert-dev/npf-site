@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { C } from "../theme";
-import { Badge, SectionLabel, PageWrapper, Section } from "../components/UI";
+import { Badge, Faq, SectionLabel, PageWrapper, Section } from "../components/UI";
 import {
   INCLUDED, PLANNING_VS_PREP, WHO, PROCESS, FAQ, LAST_UPDATED,
 } from "../data/taxServices.js";
@@ -210,20 +210,14 @@ export default function TaxServices() {
       </Section>
 
       {/* ═══ 7. FAQ ═══ */}
-      {/* Plain text, always open. An accordion that renders empty for a crawler
-          is worth nothing, and these answers are the point of the page. */}
+      {/* Collapsed by default, but the answers are real text in the HTML, not
+          injected on click, so crawlers and AI engines still read all of them. */}
       <Section style={{ borderTop: `1px solid ${C.border}` }}>
         <h2 style={h2}>Common questions about business taxes</h2>
-        <div style={{ maxWidth: 820, marginTop: 32 }}>
-          {FAQ.map(({ q, a }) => (
-            <div key={q} style={{
-              borderTop: `1px solid ${C.border}`, padding: "26px 0",
-            }}>
-              <h3 style={{ ...h3, fontSize: 17, marginBottom: 10 }}>{q}</h3>
-              <p style={{ ...body, fontSize: 16, lineHeight: 1.8 }}>{a}</p>
-            </div>
-          ))}
-        </div>
+        <p style={{ ...lede, marginBottom: 32 }}>
+          Click any question to open it.
+        </p>
+        <Faq items={FAQ} />
         <p style={{
           fontSize: 13, color: C.gray, lineHeight: 1.7, maxWidth: 820,
           marginTop: 32, fontStyle: "italic",

@@ -31,6 +31,34 @@ const GLOBAL_CSS = `
   .fade-up-d3 { animation: fadeUp 0.8s ease 0.3s forwards; opacity: 0; }
   .fade-up-d4 { animation: fadeUp 0.8s ease 0.4s forwards; opacity: 0; }
   input:focus, textarea:focus { outline: none; border-color: ${C.accent} !important; }
+
+  .faq-item { border-top: 1px solid ${C.border}; }
+  .faq-item:last-of-type { border-bottom: 1px solid ${C.border}; }
+  .faq-item > summary {
+    display: flex; align-items: flex-start; justify-content: space-between;
+    gap: 24px; padding: 22px 0; cursor: pointer; list-style: none;
+  }
+  .faq-item > summary::-webkit-details-marker { display: none; }
+  .faq-item > summary::marker { content: ""; }
+  .faq-item > summary:focus-visible { outline: 2px solid ${C.accent}; outline-offset: 4px; }
+  .faq-q {
+    font-family: 'Inter', sans-serif; font-size: 17px; font-weight: 700;
+    color: ${C.dark}; line-height: 1.45; letter-spacing: -0.01em; margin: 0;
+    transition: color 0.2s;
+  }
+  .faq-item > summary:hover .faq-q { color: ${C.accent}; }
+  .faq-icon { position: relative; flex: 0 0 14px; width: 14px; height: 14px; margin-top: 5px; }
+  .faq-icon::before, .faq-icon::after {
+    content: ""; position: absolute; top: 50%; left: 0;
+    width: 14px; height: 2px; margin-top: -1px; background: ${C.accent};
+    transition: transform 0.25s ease;
+  }
+  .faq-icon::after { transform: rotate(90deg); }
+  .faq-item[open] .faq-icon::after { transform: rotate(0deg); }
+  .faq-a {
+    font-size: 16px; color: ${C.gray}; line-height: 1.8;
+    margin: 0; padding: 0 38px 26px 0; max-width: 760px;
+  }
 `;
 
 function GlobalStyles() {

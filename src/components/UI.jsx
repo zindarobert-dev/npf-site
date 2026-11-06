@@ -149,6 +149,22 @@ export function IndustryTag({ label }) {
   );
 }
 
+export function Faq({ items }) {
+  return (
+    <div style={{ maxWidth: 820 }}>
+      {items.map(({ q, a }) => (
+        <details key={q} className="faq-item">
+          <summary>
+            <h3 className="faq-q">{q}</h3>
+            <span className="faq-icon" aria-hidden="true" />
+          </summary>
+          <p className="faq-a">{a}</p>
+        </details>
+      ))}
+    </div>
+  );
+}
+
 export function PageWrapper({ children }) {
   return (
     <div style={{ paddingTop: 80, minHeight: "calc(100vh - 120px)" }}>

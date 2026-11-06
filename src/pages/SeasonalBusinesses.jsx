@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { C } from "../theme";
-import { Badge, SectionLabel, PageWrapper, Section } from "../components/UI";
+import { Badge, Faq, SectionLabel, PageWrapper, Section } from "../components/UI";
 import { LAST_UPDATED, SEGMENTS, PROBLEMS, LADDER, CALENDAR, FAQ } from "../data/seasonal";
 
 const h2 = {
@@ -231,17 +231,7 @@ export default function SeasonalBusinesses() {
           General information, not advice for your situation. The right answer usually depends on
           your state, your accounting method, and the facts.
         </p>
-        <div style={{ maxWidth: 760 }}>
-          {FAQ.map(({ q, a }) => (
-            <div key={q} style={{ borderTop: `1px solid ${C.border}`, padding: "28px 0" }}>
-              <h3 style={{
-                fontFamily: "'Inter', sans-serif", fontSize: 18, fontWeight: 700,
-                color: C.dark, margin: "0 0 12px 0", lineHeight: 1.4, letterSpacing: "-0.01em",
-              }}>{q}</h3>
-              <p style={{ fontSize: 16, color: C.gray, lineHeight: 1.8, margin: 0 }}>{a}</p>
-            </div>
-          ))}
-        </div>
+        <Faq items={FAQ} />
       </Section>
 
       {/* ═══ 10. FINAL CTA ═══ */}
