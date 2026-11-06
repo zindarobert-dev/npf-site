@@ -1,7 +1,7 @@
 # Three Seeds
 
 > Tax, controller, and Part Time CFO support for businesses where cash moves on
-> an uneven schedule. Run by Bobby Zinda from Central Wisconsin, working with
+> an uneven schedule. Run by Robert "Bobby" Zinda from Central Wisconsin, working with
 > owners nationwide, fully remote.
 
 Three Seeds works with owner-led businesses whose revenue is healthy but whose
@@ -17,7 +17,7 @@ support, built on the client's own books.
 - [Services](https://www.threeseeds.io/services): The three service tiers, bookkeeping, controller, and Part Time CFO, plus a one-time Financial Discovery engagement.
 - [Industries](https://www.threeseeds.io/industries): Industries served, including SaaS, wellness, agriculture, travel, oil and gas, and consumer lending.
 - [Case studies](https://www.threeseeds.io/case-studies): Two detailed engagements: a finance command system for a subscription platform, and a rebuilt $10M+ fixed-asset register.
-- [About](https://www.threeseeds.io/about): Bobby Zinda, the founder, and where the Three Seeds name comes from.
+- [About](https://www.threeseeds.io/about): Robert Zinda, the founder, and where the Three Seeds name comes from.
 - [Contact](https://www.threeseeds.io/contact): Free 30-minute discovery call. Month to month, no contracts.
 
 ## Notes

@@ -188,7 +188,7 @@ export default function SeasonalBusinesses() {
           }}>
             <img
               src="/headshot.jpg"
-              alt="Bobby Zinda, founder of Three Seeds, outdoors in Central Wisconsin"
+              alt="Robert Zinda, founder of Three Seeds, outdoors in Central Wisconsin"
               style={{ width: "100%", height: "auto", display: "block" }}
               width="800" height="1200" loading="lazy"
             />
@@ -197,14 +197,14 @@ export default function SeasonalBusinesses() {
             <h3 style={{
               fontFamily: "'Inter', sans-serif", fontSize: 24, fontWeight: 700,
               color: C.dark, margin: "0 0 6px 0", letterSpacing: "-0.01em",
-            }}>Bobby Zinda</h3>
+            }}>Robert "Bobby" Zinda</h3>
             <p style={{ fontSize: 14, color: C.accent, letterSpacing: "0.04em", marginBottom: 20 }}>
               Founder, Three Seeds · Central Wisconsin
             </p>
             {/* [BOBBY: add credentials and status here, e.g. EA, CPA candidate. Left out
                 rather than guessed.] */}
             <p style={{ ...lede, fontSize: 16, marginBottom: 16 }}>
-              Bobby runs Three Seeds out of Central Wisconsin and works with owners nationwide,
+              Robert runs Three Seeds out of Central Wisconsin and works with owners nationwide,
               fully remote. He is a U.S. Veteran. The practice covers tax, controller work, and
               Part Time CFO support, and the seasonal track exists because the same six problems
               kept showing up in the same four months.
