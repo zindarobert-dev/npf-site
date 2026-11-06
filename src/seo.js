@@ -1,4 +1,9 @@
 import { FAQ, LAST_UPDATED_ISO } from "./data/seasonal.js";
+import {
+  FAQ as TAX_FAQ,
+  INCLUDED as TAX_INCLUDED,
+  LAST_UPDATED_ISO as TAX_UPDATED,
+} from "./data/taxServices.js";
 
 export const SITE = {
   name: "Three Seeds",
@@ -20,6 +25,12 @@ export const PAGES = {
     title: "Part Time CFO & Controller Services | Three Seeds",
     description:
       "Three tiers of financial support: bookkeeping, controller, and Part Time CFO. Plus a one-time Financial Discovery for owners not ready for a retainer.",
+  },
+  "/tax-services": {
+    title: "Business Tax Services & Tax Planning | Three Seeds",
+    description:
+      "Business tax returns and year-round tax planning for owner-led companies. Entity structure, estimated payments, sales tax, and books that back the return.",
+    jsonLd: taxJsonLd,
   },
   "/seasonal-businesses": {
     title: "Tax & CFO for Seasonal Businesses | Three Seeds",
@@ -69,6 +80,67 @@ export const PAGES = {
   },
 };
 
+
+function taxJsonLd() {
+  const url = `${SITE.url}/tax-services`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: "Business tax services for owner-led companies",
+        description: PAGES["/tax-services"].description,
+        inLanguage: "en-US",
+        dateModified: TAX_UPDATED,
+        isPartOf: { "@id": `${SITE.url}/#organization` },
+        about: { "@id": `${url}#service` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
+          { "@type": "ListItem", position: 2, name: "Tax Services", item: url },
+        ],
+      },
+      {
+        // Distinct from the site-wide AccountingService node: that one is the
+        // practice, this one is the tax offering specifically.
+        "@type": "Service",
+        "@id": `${url}#service`,
+        name: "Business tax services",
+        serviceType: "Tax preparation and tax planning",
+        url,
+        provider: { "@id": `${SITE.url}/#organization` },
+        areaServed: { "@type": "Country", name: "United States" },
+        audience: {
+          "@type": "BusinessAudience",
+          name: "Owner-led businesses with uneven income",
+        },
+        hasOfferCatalog: {
+          "@type": "OfferCatalog",
+          name: "Business tax services",
+          itemListElement: TAX_INCLUDED.map(({ name, detail }) => ({
+            "@type": "Offer",
+            itemOffered: { "@type": "Service", name, description: detail },
+          })),
+        },
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        mainEntity: TAX_FAQ.map(({ q, a }) => ({
+          "@type": "Question",
+          name: q,
+          acceptedAnswer: { "@type": "Answer", text: a },
+        })),
+      },
+    ],
+  };
+}
 
 function seasonalJsonLd() {
   const url = `${SITE.url}/seasonal-businesses`;

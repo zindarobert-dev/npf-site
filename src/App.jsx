@@ -9,6 +9,7 @@ import CaseStudyDetail from "./pages/CaseStudyDetail";
 import About from "./pages/About";
 import Contact from "./pages/Contact";
 import SeasonalBusinesses from "./pages/SeasonalBusinesses";
+import TaxServices from "./pages/TaxServices";
 import Eula from "./pages/Eula";
 import Privacy from "./pages/Privacy";
 import NotFound from "./pages/NotFound";
@@ -49,6 +50,7 @@ export default function App() {
           <Route path="/case-studies/:slug" element={<CaseStudyDetail />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/tax-services" element={<TaxServices />} />
           <Route path="/seasonal-businesses" element={<SeasonalBusinesses />} />
           <Route path="/legal/eula" element={<Eula />} />
           <Route path="/legal/privacy" element={<Privacy />} />

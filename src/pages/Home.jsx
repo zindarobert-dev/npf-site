@@ -69,7 +69,7 @@ export default function Home() {
               display: "inline-block",
             }}>Talk to Robert →</Link>
             <Link to="/services" style={secondaryBtn}>Cash flow services</Link>
-            <Link to="/seasonal-businesses" style={secondaryBtn}>Tax services</Link>
+            <Link to="/tax-services" style={secondaryBtn}>Tax services</Link>
           </div>
 
         </div>

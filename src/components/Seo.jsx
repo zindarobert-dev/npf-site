@@ -48,6 +48,20 @@ export default function Seo() {
       el.setAttribute("rel", "canonical");
       return el;
     }, canonical);
+
+    // Swap the per-page JSON-LD. Without this, navigating from /tax-services
+    // to /about leaves the tax FAQPage sitting in the head of the about page.
+    // The site-wide graph in index.html carries no data-page-ld, so it stays.
+    const stale = document.head.querySelector('script[data-page-ld]');
+    if (stale) stale.remove();
+    if (meta.jsonLd) {
+      const el = document.createElement("script");
+      el.type = "application/ld+json";
+      el.setAttribute("data-page-ld", "true");
+      // textContent, not innerHTML, so "</" inside a string cannot break out.
+      el.textContent = JSON.stringify(meta.jsonLd());
+      document.head.appendChild(el);
+    }
   }, [pathname]);
 
   return null;

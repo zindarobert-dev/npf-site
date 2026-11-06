@@ -44,7 +44,7 @@ function seoTags(route) {
   if (meta.jsonLd) {
     // "</" inside a JSON string would close the script element early.
     const json = JSON.stringify(meta.jsonLd(), null, 2).replace(/<\//g, "<\\/");
-    tags.push(`<script type="application/ld+json">\n${json}\n    </script>`);
+    tags.push(`<script type="application/ld+json" data-page-ld="true">\n${json}\n    </script>`);
   }
   return tags.join("\n    ");
 }

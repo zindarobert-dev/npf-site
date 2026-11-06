@@ -45,6 +45,7 @@ export default function SeasonalBusinesses() {
         <div style={{ display: "flex", gap: 24, flexWrap: "wrap", alignItems: "center", marginBottom: 28 }}>
           <Link to="/contact" style={primaryBtn}>Get an Off-Season Cash Check →</Link>
           <a href="#how-it-works" style={{ ...inlineLink, fontSize: 14 }}>See how it works</a>
+          <Link to="/tax-services" style={{ ...inlineLink, fontSize: 14 }}>All tax services</Link>
         </div>
         <div style={{ display: "flex", gap: 12, flexWrap: "wrap", alignItems: "center" }}>
           <Badge>Nationwide · Fully Remote</Badge>

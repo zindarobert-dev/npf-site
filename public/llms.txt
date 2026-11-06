@@ -13,7 +13,8 @@ support, built on the client's own books.
 ## Pages
 
 - [Home](https://www.threeseeds.io/): What Three Seeds does and the three kinds of cash timing problems it solves.
-- [Tax services](https://www.threeseeds.io/seasonal-businesses): Tax and cash flow guidance for businesses that earn most of their revenue in a few months. Covers customer deposits and tax timing, sales tax on tours and rentals, seasonal worker classification, estimated taxes on uneven income, year-end equipment purchases, 1099-K reconciliation, and off-season runway. Includes a seasonal tax calendar and an eight-question FAQ.
+- [Tax services](https://www.threeseeds.io/tax-services): Business and owner tax returns, year-round tax planning, entity structure and owner compensation, estimated payments sized to uneven income, and sales and payroll tax filings. Explains the difference between tax preparation and tax planning, and includes a nine-question FAQ.
+- [Seasonal business tax guide](https://www.threeseeds.io/seasonal-businesses): The seasonal deep dive. Customer deposits and tax timing, sales tax on tours and rentals, seasonal worker classification, estimated taxes on uneven income, year-end equipment purchases, 1099-K reconciliation, and off-season runway. Includes a seasonal tax calendar and an eight-question FAQ.
 - [Cash flow services](https://www.threeseeds.io/services): The three service tiers, bookkeeping, controller, and Part Time CFO, plus a one-time Financial Discovery engagement.
 - [Case studies](https://www.threeseeds.io/case-studies): Two detailed engagements, a finance command system for a subscription platform and a rebuilt $10M+ fixed-asset register, plus the industries served: SaaS, wellness, agriculture, travel, oil and gas, and consumer lending.
 - [About](https://www.threeseeds.io/about): Robert Zinda, the founder, and where the Three Seeds name comes from.

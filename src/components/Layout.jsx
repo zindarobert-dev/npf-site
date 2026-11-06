@@ -20,7 +20,7 @@ export default function Layout({ children }) {
 
   const navLinks = [
     { label: "Cash Flow Services", to: "/services" },
-    { label: "Tax Services", to: "/seasonal-businesses" },
+    { label: "Tax Services", to: "/tax-services" },
     { label: "Case Studies", to: "/case-studies" },
     { label: "About", to: "/about" },
     { label: "Contact", to: "/contact" },
