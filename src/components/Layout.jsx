@@ -19,8 +19,8 @@ export default function Layout({ children }) {
   }, [location.pathname]);
 
   const navLinks = [
-    { label: "Services", to: "/services" },
-    { label: "Seasonal Businesses", to: "/seasonal-businesses" },
+    { label: "Cash Flow Services", to: "/services" },
+    { label: "Tax Services", to: "/seasonal-businesses" },
     { label: "Case Studies", to: "/case-studies" },
     { label: "About", to: "/about" },
     { label: "Contact", to: "/contact" },

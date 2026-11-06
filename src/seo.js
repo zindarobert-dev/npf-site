@@ -9,7 +9,7 @@ export const SITE = {
 
 const DEFAULT_TITLE = "Cash Flow Forecasting & Part Time CFO | Three Seeds";
 const DEFAULT_DESC =
-  "Part Time CFO, controller, and bookkeeping for businesses where cash moves on an uneven schedule. See the crunch before it lands. Nationwide, fully remote.";
+  "Cash flow services and tax for businesses where money goes out long before it comes back in. Part Time CFO, controller, bookkeeping. Nationwide, fully remote.";
 
 export const PAGES = {
   "/": {

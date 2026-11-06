@@ -7,7 +7,7 @@ export default function Services() {
     <PageWrapper>
       {/* Hero */}
       <Section style={{ paddingTop: 100, paddingBottom: 40 }}>
-        <SectionLabel label="Services" number="02" />
+        <SectionLabel label="Cash Flow Services" number="02" />
         <h1 style={{
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(36px, 5vw, 64px)",
           fontWeight: 700, lineHeight: 1.08, maxWidth: 700, marginBottom: 20, letterSpacing: "-0.03em",

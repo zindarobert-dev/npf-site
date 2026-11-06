@@ -2,6 +2,14 @@ import { Link } from "react-router-dom";
 import { C } from "../theme";
 import { Badge, PainCard, PageWrapper, Section, SectionLabel } from "../components/UI";
 
+const secondaryBtn = {
+  background: "transparent", color: C.dark, border: `1px solid ${C.border}`,
+  padding: "16px 30px", fontFamily: "'Inter', sans-serif", textDecoration: "none",
+  fontSize: 13, fontWeight: 400, letterSpacing: "0.1em",
+  textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
+  display: "inline-block",
+};
+
 export default function Home() {
   return (
     <PageWrapper>
@@ -35,30 +43,33 @@ export default function Home() {
           </h1>
           <p className="fade-up-d2" style={{
             fontSize: "clamp(16px, 1.8vw, 20px)", color: C.gray, lineHeight: 1.7,
-            maxWidth: 580, margin: "0 0 44px 0", fontWeight: 300,
+            maxWidth: 580, margin: "0 0 28px 0", fontWeight: 300,
           }}>
-            Part Time CFO, controller, and bookkeeping for businesses where money goes out
-            long before it comes back in. We help you see the crunch before it lands.
-            Nationwide, fully remote.
+            For businesses where the money goes out months before it comes back in.
+            Cash flow services on one side, tax on the other, both run off the same
+            set of books. Nationwide, fully remote.
           </p>
-          <div className="fade-up-d3" style={{ display: "flex", gap: 16, flexWrap: "wrap", alignItems: "flex-start", marginBottom: 80 }}>
-            <div style={{ display: "flex", flexDirection: "column", gap: 12, alignItems: "flex-start" }}>
-              <Link to="/contact" style={{
-                background: C.accent, color: "#fff", border: "none", textDecoration: "none",
-                padding: "16px 36px", fontFamily: "'Inter', sans-serif",
-                fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
-                textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
-                display: "inline-block",
-              }}>Talk to Robert →</Link>
-              <Badge>CFO Advisory · Tax</Badge>
-            </div>
-            <Link to="/services" style={{
-              background: "transparent", color: C.dark, border: `1px solid ${C.border}`,
-              padding: "16px 36px", fontFamily: "'Inter', sans-serif", textDecoration: "none",
-              fontSize: 13, fontWeight: 400, letterSpacing: "0.1em",
+
+          {/* The "is this me?" test. Says what kind of business this is for
+              without labelling the reader. */}
+          <p className="fade-up-d2" style={{
+            fontSize: "clamp(15px, 1.5vw, 17px)", color: C.dark, lineHeight: 1.6,
+            maxWidth: 560, margin: "0 0 40px 0", fontWeight: 500,
+            borderLeft: `2px solid ${C.accent}`, paddingLeft: 18,
+          }}>
+            If the money is real but it always arrives after the bills do,
+            you're in the right place.
+          </p>
+          <div className="fade-up-d3" style={{ display: "flex", gap: 14, flexWrap: "wrap", alignItems: "center", marginBottom: 80 }}>
+            <Link to="/contact" style={{
+              background: C.accent, color: "#fff", border: "1px solid transparent", textDecoration: "none",
+              padding: "16px 36px", fontFamily: "'Inter', sans-serif",
+              fontSize: 13, fontWeight: 700, letterSpacing: "0.1em",
               textTransform: "uppercase", borderRadius: 3, transition: "all 0.3s",
               display: "inline-block",
-            }}>See Services</Link>
+            }}>Talk to Robert →</Link>
+            <Link to="/services" style={secondaryBtn}>Cash flow services</Link>
+            <Link to="/seasonal-businesses" style={secondaryBtn}>Tax services</Link>
           </div>
 
         </div>
@@ -144,7 +155,7 @@ export default function Home() {
             color: C.accent, fontFamily: "'Inter', sans-serif", fontSize: 13,
             letterSpacing: "0.08em", textDecoration: "none", borderBottom: `1px solid ${C.accent}44`,
             paddingBottom: 2,
-          }}>SEASONAL BUSINESS? READ THE TAX AND CASH FLOW GUIDE →</Link>
+          }}>SEASONAL BUSINESS? READ THE FULL TAX GUIDE →</Link>
         </div>
       </Section>
 

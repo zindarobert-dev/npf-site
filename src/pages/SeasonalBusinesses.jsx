@@ -31,7 +31,7 @@ export default function SeasonalBusinesses() {
     <PageWrapper>
       {/* ═══ 1. HERO ═══ */}
       <Section style={{ paddingTop: 100, paddingBottom: 48 }}>
-        <SectionLabel label="Seasonal Businesses" number="06" />
+        <SectionLabel label="Tax Services" number="06" />
         <h1 style={{
           fontFamily: "'Inter', sans-serif", fontSize: "clamp(34px, 5vw, 60px)",
           fontWeight: 700, lineHeight: 1.08, maxWidth: 780, marginBottom: 22, letterSpacing: "-0.03em",
