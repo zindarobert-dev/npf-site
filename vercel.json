@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/industries",
+      "destination": "/case-studies#industries",
+      "permanent": true
+    }
+  ]
+}

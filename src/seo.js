@@ -21,11 +21,6 @@ export const PAGES = {
     description:
       "Three tiers of financial support: bookkeeping, controller, and Part Time CFO. Plus a one-time Financial Discovery for owners not ready for a retainer.",
   },
-  "/industries": {
-    title: "Industries We Serve | Three Seeds Part Time CFO",
-    description:
-      "Cash flow and controller support across SaaS, wellness, agriculture, travel, oil and gas, and consumer lending. Every business differs. The questions rhyme.",
-  },
   "/seasonal-businesses": {
     title: "Tax & CFO for Seasonal Businesses | Three Seeds",
     description:
@@ -35,7 +30,7 @@ export const PAGES = {
   "/case-studies": {
     title: "Case Studies | Three Seeds Part Time CFO",
     description:
-      "How we rebuilt a drifted $10M fixed-asset register and automated revenue recognition for a subscription platform. Real engagements, real systems.",
+      "How we rebuilt a drifted $10M fixed-asset register and automated revenue recognition for a subscription platform, plus the industries we serve.",
   },
   "/case-studies/finance-command-system": {
     title: "Finance Command System for a Subscription Platform",
