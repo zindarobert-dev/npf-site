@@ -139,6 +139,13 @@ export default function Home() {
             </div>
           ))}
         </div>
+        <div style={{ marginTop: 48, textAlign: "center" }}>
+          <Link to="/seasonal-businesses" style={{
+            color: C.accent, fontFamily: "'Inter', sans-serif", fontSize: 13,
+            letterSpacing: "0.08em", textDecoration: "none", borderBottom: `1px solid ${C.accent}44`,
+            paddingBottom: 2,
+          }}>SEASONAL BUSINESS? READ THE TAX AND CASH FLOW GUIDE →</Link>
+        </div>
       </Section>
 
       {/* ═══ THE THREE SEEDS ═══ */}

@@ -1,3 +1,5 @@
+import { FAQ, LAST_UPDATED_ISO } from "./data/seasonal.js";
+
 export const SITE = {
   name: "Three Seeds",
   url: "https://www.threeseeds.io",
@@ -23,6 +25,12 @@ export const PAGES = {
     title: "Industries We Serve | Three Seeds Part Time CFO",
     description:
       "Cash flow and controller support across SaaS, wellness, agriculture, travel, oil and gas, and consumer lending. Every business differs. The questions rhyme.",
+  },
+  "/seasonal-businesses": {
+    title: "Tax & CFO for Seasonal Businesses | Three Seeds",
+    description:
+      "Tax planning and cash flow forecasting for businesses that earn most of their revenue in a few months. Built for seasonal owners.",
+    jsonLd: seasonalJsonLd,
   },
   "/case-studies": {
     title: "Case Studies | Three Seeds Part Time CFO",
@@ -65,6 +73,45 @@ export const PAGES = {
     noindex: true,
   },
 };
+
+
+function seasonalJsonLd() {
+  const url = `${SITE.url}/seasonal-businesses`;
+  return {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "WebPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: "Tax and cash flow for seasonal businesses",
+        description: PAGES["/seasonal-businesses"].description,
+        inLanguage: "en-US",
+        dateModified: LAST_UPDATED_ISO,
+        isPartOf: { "@id": `${SITE.url}/#organization` },
+        about: { "@id": `${SITE.url}/#service` },
+        breadcrumb: { "@id": `${url}#breadcrumb` },
+      },
+      {
+        "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
+        itemListElement: [
+          { "@type": "ListItem", position: 1, name: "Home", item: `${SITE.url}/` },
+          { "@type": "ListItem", position: 2, name: "Seasonal Businesses", item: url },
+        ],
+      },
+      {
+        "@type": "FAQPage",
+        "@id": `${url}#faq`,
+        mainEntity: FAQ.map(({ q, a }) => ({
+          "@type": "Question",
+          name: q,
+          acceptedAnswer: { "@type": "Answer", text: a },
+        })),
+      },
+    ],
+  };
+}
 
 export function metaFor(path) {
   const clean = path !== "/" && path.endsWith("/") ? path.slice(0, -1) : path;

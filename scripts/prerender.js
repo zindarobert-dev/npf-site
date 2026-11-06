@@ -41,6 +41,11 @@ function seoTags(route) {
     `<meta name="twitter:image" content="${SITE.image}" />`,
   ];
   if (meta.noindex) tags.push(`<meta name="robots" content="noindex" />`);
+  if (meta.jsonLd) {
+    // "</" inside a JSON string would close the script element early.
+    const json = JSON.stringify(meta.jsonLd(), null, 2).replace(/<\//g, "<\\/");
+    tags.push(`<script type="application/ld+json">\n${json}\n    </script>`);
+  }
   return tags.join("\n    ");
 }
 

@@ -157,9 +157,9 @@ export function PageWrapper({ children }) {
   );
 }
 
-export function Section({ children, style }) {
+export function Section({ children, style, id }) {
   return (
-    <section style={{ padding: "80px clamp(20px, 5vw, 80px)", ...style }}>
+    <section id={id} style={{ padding: "80px clamp(20px, 5vw, 80px)", ...style }}>
       <div style={{ maxWidth: 1200, margin: "0 auto" }}>
         {children}
       </div>

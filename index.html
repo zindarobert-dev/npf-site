@@ -25,6 +25,14 @@
           "areaServed": {
             "@type": "Country",
             "name": "United States"
+          },
+          "address": {
+            "@type": "PostalAddress",
+            "addressRegion": "WI",
+            "addressCountry": "US"
+          },
+          "founder": {
+            "@id": "https://www.threeseeds.io/#bobby"
           }
         },
         {
@@ -32,7 +40,9 @@
           "@id": "https://www.threeseeds.io/#service",
           "name": "Three Seeds",
           "url": "https://www.threeseeds.io/",
-          "parentOrganization": { "@id": "https://www.threeseeds.io/#organization" },
+          "parentOrganization": {
+            "@id": "https://www.threeseeds.io/#organization"
+          },
           "description": "Part Time CFO, controller, and bookkeeping support for cash-flow-intensive businesses: contractors and trades managing progress billing and retainage, seasonal businesses spending ahead of their busy season, and inventory-heavy distributors with cash tied up in stock. Cash flow forecasting that shows owners a crunch before it lands.",
           "areaServed": {
             "@type": "Country",
@@ -46,12 +56,69 @@
             "@type": "OfferCatalog",
             "name": "Services",
             "itemListElement": [
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Bookkeeping and Compliance" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Controller Services" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Part Time CFO" } },
-              { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Financial Discovery" } }
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Bookkeeping and Compliance"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Controller Services"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Part Time CFO"
+                }
+              },
+              {
+                "@type": "Offer",
+                "itemOffered": {
+                  "@type": "Service",
+                  "name": "Financial Discovery"
+                }
+              }
             ]
+          },
+          "founder": {
+            "@id": "https://www.threeseeds.io/#bobby"
+          },
+          "provider": {
+            "@id": "https://www.threeseeds.io/#organization"
           }
+        },
+        {
+          "@type": "Person",
+          "@id": "https://www.threeseeds.io/#bobby",
+          "name": "Bobby Zinda",
+          "jobTitle": "Founder",
+          "worksFor": {
+            "@id": "https://www.threeseeds.io/#organization"
+          },
+          "homeLocation": {
+            "@type": "Place",
+            "address": {
+              "@type": "PostalAddress",
+              "addressRegion": "WI",
+              "addressCountry": "US"
+            }
+          },
+          "sameAs": [
+            "https://cashgap.substack.com"
+          ],
+          "knowsAbout": [
+            "seasonal business tax",
+            "cash flow forecasting",
+            "Part Time CFO",
+            "sales tax",
+            "small business tax planning"
+          ]
         }
       ]
     }
